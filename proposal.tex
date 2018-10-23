@@ -1,0 +1,113 @@
+\documentclass[10pt]{article}
+
+\usepackage{fullpage}
+\usepackage[all=normal,bibliography=tight]{savetrees}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{hyperref} 
+\usepackage{todonotes}
+\usepackage{xspace}
+\usepackage{ifthen}
+
+\newcommand{\ourtitle}{Sparsity}
+\newcommand{\email}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
+\newcommand{\organizer}[7]{%
+\noindent\begin{tabular}{p{3cm}l}
+\textbf{Name:} & #1 \\
+\textbf{Affiliation:} & #2 \\
+\textbf{Address:} & #3 \\
+\textbf{Phone:} & #4 \\
+\textbf{Fax:} & #5 \\
+\textbf{Email:} & \email{#6} \\
+\textbf{Homepage:} & \url{#7}
+\end{tabular}\par\vspace{4mm}}
+
+\newcommand{\invitee}[6]{%
+\noindent\begin{tabular}{p{3cm}l}
+\textbf{Name:} & #1 \\
+\textbf{Affiliation:} & #2 \\
+\textbf{Email:} & \email{#3} \\
+\ifthenelse{\equal{#4}{}}{}{\textbf{Homepage:} & \url{#4} \\}
+\textbf{Topics:} & #5
+\ifthenelse{\equal{#6}{}}{}{\\ \textbf{Tags:} & #6}
+\end{tabular}\par\vspace{2mm}}
+
+\renewcommand\thesection{\Alph{section}}
+
+\title{{\large{Proposal for a Dagstuhl seminar on}}\\
+  {\huge{\textbf{\ourtitle}}}}
+
+\author{
+  Daniel Kr\'al' \and
+  Micha\l{} Pilipczuk \and
+  Sebastian Siebertz\and
+  Blair D. Sullivan 
+}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The theory of {\em{sparsity}} studies abstract notions of uniform sparsity for classes of graphs, as well as more general logical structures.
+The main goal is to understand why, and to what extent, sparsity of a given structure can be used to describe its properties, 
+and to develop tools helpful for designing sparsity-based methods.
+Since the work of Ne\v{s}et\v{r}il and Ossona de Mendez, who laid solid foundations of the theory in the late 2000s, 
+a huge body of work has shown that the two main notions --- {\em{bounded expansion}} and {\em{nowhere denseness}} ---
+have deep connections with classic concepts from combinatorics, model theory, and algorithm design, and can be used to obtain new, powerful results in these areas.
+It is the synergy of these three fields that makes sparsity a mathematically rich and exciting theory, which is currently under rapid development.
+The notions of bounded expansion and nowhere denseness also constitute borders of computational tractability for natural classes of problems, 
+most notably for the model-checking problem for first-order logic; this witnesses the fundamental nature of the studied concepts.
+
+The aim of the proposed seminar is to bring together researchers working on various aspects of sparsity, in order to facilitate 
+the exchange of ideas, methods, and questions between different communities. An important part of the seminar will be the discussion
+of the (still fledgling) area of real-life applications of sparsity-based methods, where theory and practice could meet.
+\end{abstract}
+
+\section{Metadata}
+
+\begin{enumerate}
+\item {\bf{Organizers}}:
+\begin{itemize}
+\item Daniel Kr\'al', Masaryk University in Brno, Czech Republic, \email{kral@ucw.cz};
+\item Micha\l{} Pilipczuk, University of Warsaw, Poland, \email{michal.pilipczuk@mimuw.edu.pl};
+\item Sebastian Siebertz, Humboldt University in Berlin, Germany, \email{siebertz@mimuw.edu.pl};
+\item Blair D. Sullivan, North Carolina State University, Raleigh, USA, \email{blair_sullivan@ncsu.edu}.
+\end{itemize}
+\item {\bf{Title}}: \ourtitle
+\item {\bf{Type}}: Dagstuhl Seminar
+\item {\bf{Size and duration}}: Large (45 participants) and Long (5 days)
+\item {\bf{Classification}}: TODO
+\item {\bf{Keywords}}: TODO
+\end{enumerate}
+
+\section{Proposal text}
+
+Blah blah blah~\cite{sparsity}
+
+\input{intro}
+\input{combinatorics}
+\input{model-theory}
+\input{algorithms}
+\input{applications}
+\input{results}
+\input{structure}
+\input{other-seminars}
+
+\section{Invitee list}
+
+\input{invitees}
+
+\section{Organizers' CVs}
+
+\section{Proposed dates}
+
+\input{dates}
+
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+
+
+\end{document}
