@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: /Users/pom/sparsity_dagstuhl/proposal.aux
+The style file: abbrv.bst
+Database file #1: references.bib
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            504 strings with 3932 characters,
+and the built_in function-call counts, 289 in all, are:
+= -- 23
+> -- 13
+< -- 1
++ -- 5
+- -- 4
+* -- 21
+:= -- 54
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 13
+empty$ -- 24
+format.name$ -- 4
+if$ -- 57
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 4
+quote$ -- 0
+skip$ -- 7
+stack$ -- 0
+substring$ -- 5
+swap$ -- 3
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 13
