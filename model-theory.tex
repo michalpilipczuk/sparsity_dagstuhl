@@ -1,104 +1,14 @@
 \paragraph*{Model theory.}
-The  structural and algorithmic properties of sparse classes of graphs --- notably nowhere dense classes --- are deeply connected to  the model-theoretical notions of independence and stability, as witnessed in particular by two fundamental results. The first result asserts that for a monotone class of graphs, the notions of nowhere dense class, NIP class, and stable class are equivalent \cite{adler2014interpreting}. The second one states that nowhere dense classes are the most general monotone classes for which first-order model checking is fixed-parameter tractable \cite{grohe2017deciding}. This connection has already proved his efficiency in transferring techniques and notions from model theory to combinatorics (see for instance \cite{pilipczuk2018number}) and, conversely, from combinatorics to finite model theory (see for instance \cite{rossman2008homomorphism}).
+Model Theory  is the study of classes of mathematical structures from the perspective of mathematical logic, and this study mainly concerns infinite structures.
+A classification of theories based on those whose models can be classified and those whose models are too complicated to classify has been initiated by Shelah, who  drew two important dividing lines: NIP vs dependent and stable vs unstable \cite{shelah1990classification}.
 
-Guided by the model theoretical intuition, it is natural to expect that some of the techniques and results proved for monotone sparse classes may extend to hereditary structurally sparse classes, that is possibly dense classes of low structural complexity. In this direction, it has been proved that model checking is fixed parameter tractable on interpretations of classes of graphs with bounded maximum degree \cite{gajarsky2016new} and that transductions of bounded expansion classes of graphs admit low shrub-depth decompositions, a dense analog of low tree-depth decompositions \cite{gajarsky2018first}. 
+Finite Model Theory, which focuses on finite structures,  diverges significantly from the study of infinite structures in both the problems studied and the techniques used, and mainly grew out of computer science applications.  This led to the development of strong tools to study logics over finite structures, which helped to answer many questions about  complexity theory, databases, formal languages, algorithms, and many more. This also led to the notion of {\em tame} classes of finite structures, which behave well.  In this line Dawar \cite{Dawar2010} introduced the notion of a \emph{uniform quasi-wide class} and proved 
+     that the homomorphism preservation theorem holds when relativized to a uniformly quasi-wide class of finite structures. It was later shown 
+by Ne\v{s}et\v{r}il and Ossona de Mendez  that the uniform quasi-wide classes are exactly nowhere dense classes \cite{ND_logic}.
 
-The notion of nowhere denseness is intimately linked to 
-model theory and finite model theory. 
-Model theory is the study of logics on classes of 
-mathematical structures, and finite model theory restricts this
-study to finite structures. Nevertheless, finite model theory is
-a separate subject, and not just a small chapter in classical
-model theory. One of the reasons is that many standard 
-methods of classical model theory fail when only finite structures 
-are considered. These include the compactness theorem, the 
-completeness theorem and various interpolation and preservation
-theorems. Another reason is that finite model theory is an area 
-that grew out of computer science applications. This led to
-the development of strong tools to study logics over finite 
-structures, which helped to answer many questions about 
-complexity theory, databases, formal languages, algorithmics,
-and many more. 
+The  structural and algorithmic properties of  nowhere dense classes  are deeply connected to  the model-theoretical notions of independence and stability, as witnessed in particular by two fundamental results. The first result asserts that for a monotone class of graphs, the notions of nowhere dense class, NIP class, and stable class are equivalent \cite{adler2014interpreting}. The second one states that nowhere dense classes are the most general monotone classes for which first-order model checking is fixed-parameter tractable \cite{grohe2017deciding}. This connection has already proved his efficiency in transferring techniques and notions from model theory to combinatorics (see for instance \cite{pilipczuk2018number}) and, conversely, from combinatorics to finite model theory (see for instance \cite{rossman2008homomorphism}).
 
-The failure of the classical tools from model theory on the class 
-of all finite structures led researchers to investigate whether
-there are subclasses of finite structures that may be 
-better behaved. In finite model 
-theory such classes are called \emph{tame}. One success story 
-in this line of research is the study of homomorphism
-preservation theorems in the finite. A result of classical model 
-theory states that a first-order formula is preserved under
-homomorphisms on all structures if, and only if, it is logically 
-equivalent to an existential positive formula. A surprising 
-result by Rossmann (LICS 2005) shows that this result also holds when 
-restricted to finite structures. Furthermore, Dawar (JCSS 2010) introduced
-the notion of \emph{uniform quasi-wideness} and proved 
-that the homomorphism preservation theorem holds on all
-uniformly quasi-wide finite structures. It was later observed 
-by Ne\v{s}et\v{r}il and Ossona de Mendez (JSL 2010) that this notion 
-of model-theoretic tameness corresponds exactly to the 
-graph-theoretic notion of nowhere denseness. A result that
-sparked much interest of finite model theorists for nowhere
-dense graph classes.
+Numerous algorithmic applications of the structural properties of the graphs in a nowhere dense class (or, more restrictively in a bounded expansion class) have been published concerning, including   a near-optimal kernelization algorithm for the distance-$r$ dominating set problem for the graphs in a nowhere dense class \cite{eickmeyer2016neighborhood}.
 
-The model-theoretic notion of uniform quasi-wideness was 
-also soon picked up in algorithmic research. Using a constructive, 
-algorithmic version of uniform quasi-wideness, it was shown
-by Dawar and Kreutzer (FSTTCS 2009) that various algorithmic domination and 
-and independence problems can be solved efficiently on 
-nowhere dense graph classes. 
+Guided by the model theoretical intuition, it is natural to expect that some of the techniques and results proved for monotone sparse classes may extend to hereditary structurally sparse classes, that is possibly dense classes of low structural complexity. In this direction, it has been proved that model checking is fixed parameter tractable on map graphs \cite{eickmeyer2017fo} and on interpretations of classes of graphs with bounded maximum degree \cite{gajarsky2016new} and that transductions of bounded expansion classes of graphs admit low shrub-depth decompositions, a dense analog of low tree-depth decompositions \cite{gajarsky2018first}. 
 
-Besides providing tools for solving
-individual problems efficiently on restricted graph classes, 
-model theory offers a very elegant 
-approach to explain algorithmic techniques that work not only for 
-individual problems but for whole classes of problems. This
-approach is to classify problems by their descriptive complexity, 
-that is, by the resources required to describe the problem in a 
-suitable logic. Because tractability results for logically defined 
-classes of problems establish tractability for a large number of
-problems, such results are often called \emph{algorithmic meta theorems}. The prototypical example of an algorithmic
-meta theorem is Courcelle’s Theorem, stating that 
-every property of graphs that is definable in monadic second-order 
-logic is decidable in linear time on every class of bounded tree-width.
-There is a long line of meta theorems for first-order logic on sparse
-structures, culminating in the result of Grohe et al.\ (STOC 2014), which states
-that every property of graphs that is definable in first-order logic 
-is decidable in nearly linear time on every nowhere dense class 
-of graphs. This result (under standard complexity theoretic
-assumptions) cannot be extended to
-classes which are not nowhere dense and closed under taking
-subgraphs, as shown by Kreutzer (ECCC 2009) and Dvo\v{r}\'ak et al.\ (JACM 2013)
-
-Hence, under
-standard complexity theoretic assumptions, the classification of
-subgraph closed graph classes that admit efficient first-order 
-model-checking is complete. Consequently, recent research 
-has shifted to investigating the complexity of the model-checking
-problem for first-order logic on dense classes which are not closed 
-under taking subgraphs. And again, it is model theory which may
-guide the way for this line of research. Adler and Adler (EJC 2014) observed
-that the notion of nowhere denseness is strongly connected 
-to the notion of \emph{stability}, which is a key dividing line 
-in classical model theory between well-behaved and complicated 
-first-order theories. More precisely, they showed that 
-every nowhere dense class of finite graphs is stable, and conversely,
-any stable class of finite graphs which is closed under taking 
-subgraphs is nowhere dense. This result again manifests the notion of
-nowhere denseness as a model-theoretic property. It also suggests 
-stability theory as the framework for extending the border of 
-tractability for first-order model-checking to dense graphs. 
-This connection to stability theory has already been exploited for
-the design of efficient algorithms on nowhere dense graphs. 
-As a first step, it was used by Kreutzer et al.\ (SODA 2016) 
-to strongly improve 
-the parameter dependence between the equivalent notions of 
-uniform quasi-wideness and nowhere denseness. Based on these
-tools, Eickmeyer et al.\ (ICALP 2017) presented a near optimal 
-kernelization algorithm for the distance-$r$ dominating set problem
-on nowhere dense graph classes. We believe that this synergy 
-between classical model theory and algorithms will lead to 
-strong and very general algorithmic results. Our goal is to bring
-together researchers from model theory and algorithms to 
-explore these new connections between classical model theory
-and algorithms. 
