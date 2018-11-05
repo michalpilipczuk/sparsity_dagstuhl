@@ -1,1 +1,37 @@
-\paragraph*{Algorithms.}
+\paragraph*{Algorithms.} 
+Combinatorial methods developed in the study of classes of sparse graphs turned out to be very useful in the design of algorithms, in particular within the framework of {\em{parameterized complexity}}.
+In this area, the goal is develop algorithms whose running time is measured not only in terms of the total input size, but also secondary measures called {\em{parameters}} that govern the actual 
+difficulty of the instance. This philosophy very well matches the toolbox of sparsity, which provides a wealth of parameters measuring structural sparsity of graphs, such as generalized coloring numbers or
+low-treedepth colorings. Historically, the study of parameterized algorithms on sparse structures focused on the cases of graphs of bounded degree, of bounded treewidth, and of planar graphs. 
+With significant technical effort, many results can be proved for proper minor-closed classes using the graph minors theory of Robertson and Seymour. 
+
+Note that all the abovementioned settings can be subsumed by the concepts of bounded expansion and nowhere denseness.
+It turns out that for certain general type of problems, these structural sparsity notions form a very suitable context of study, yielding conceptually simpler, yet more general reasonings than 
+in the case of proper minor-closed classes. As witnessed by the model-checking results for first order logic~\cite{DvorakKT13,grohe2017deciding}, the techniques are best-suited to problems with local character:
+one looks for a solution (say, subset of vertices) that admits a property that can be checked by inspecting a constant-depth neighborhood of every vertex.
+Example problems of this kind are the following: Subgraph Isomorphism (given graphs $H$ and $G$, check whether $H$ is a subgraph of $G$), Distance-$r$ Independent Set (given a graph $G$, find as many as possible
+vertices pairwise at distance more than $r$), and Distance-$r$ Dominating Set (given a graph $G$, use as few vertices as possible to dominate it, 
+where every vertex dominates all vertices at distance at most $r$ from it).
+The study of these particular problems inspired a range of new algorithmic techniques, and in particular led to the development of the meta-theorems for first order logic~\cite{DvorakKT13,grohe2017deciding}.
+
+The introduction of {\em{low-treedepth colorings}} by Ne\v{s}et\v{r}il and Ossona de Mendez~\cite{NesetrilM08a} was directly inspired by algorithmic layering techniques known from the planar setting.
+One of the first applications observed in~\cite{NesetrilM08a} is a fixed-parameter algorithm for Subgraph Isomorphism on any class of bounded expansion, 
+which essentially provides the base, existential case for first-order model-checking. 
+The fixed-parameter tractability of Distance-$r$ Dominating Set on any nowhere dense class was proved by Dawar and Kreutzer~\cite{DawarK09}; 
+their approach showcased applicability of {\em{uniform quasi-wideness}} in algorithm design.
+This line of research was continued by Drange et al.~\cite{DrangeDFKLPPRVS16} and by Eickmeyer et al.~\cite{eickmeyer2016neighborhood}, who gave a linear kernel for the problem on any class of bounded expansion
+and an almost linear kernel on any nowhere dense class, respectively
+These works highlighted the concept of {\em{neighborhood complexity}} as a useful way of defining structural sparsity, 
+which was recently generalized and connected to concepts from stability theory by Pilipczuk et al.~\cite{pilipczuk2018number}.
+Similarly as for model-checking first-order logic, for subgraph-closed classes the notion of nowhere denseness is the ultimate limit of parameterized tractability for Distance-$r$ Dominating Set,
+under plausible complexity assumptions.
+
+The study of duality between distance-$2r$ independence and distance-$r$ domination led Dvo\v{r}\'ak~\cite{Dvorak13}
+to the development of constant-factor approximation algorithms for both problems on any class of bounded expansion.
+The algorithm of Dvo\v{r}\'ak is remarkably simple and it relies on the usage of {\em{generalized coloring numbers}}, which influenced
+
+
+Recently, the tools of structural sparsity were successfully applied to give new algorithmic results in the settings of {\em{circuit complexity}}~\cite{PilipczukST18} 
+(which is a model for {\em{parallel algorithms}}) and property testing~\cite{AdlerH18}.
+
+
