@@ -14,21 +14,25 @@ vertices pairwise at distance more than $r$), and Distance-$r$ Dominating Set (g
 where every vertex dominates all vertices at distance at most $r$ from it).
 The study of these particular problems inspired a range of new algorithmic techniques, and in particular led to the development of the meta-theorems for first order logic~\cite{DvorakKT13,grohe2017deciding}.
 
-The introduction of {\em{low-treedepth colorings}} by Ne\v{s}et\v{r}il and Ossona de Mendez~\cite{NesetrilM08a} was directly inspired by algorithmic layering techniques known from the planar setting.
+The concept of {\em{low-treedepth colorings}} by Ne\v{s}et\v{r}il and Ossona de Mendez~\cite{NesetrilM08a} was directly inspired by algorithmic layering techniques known from the planar setting.
 One of the first applications observed in~\cite{NesetrilM08a} is a fixed-parameter algorithm for Subgraph Isomorphism on any class of bounded expansion, 
-which essentially provides the base, existential case for first-order model-checking. 
+which provides the base, existential case for first-order model-checking. 
 The fixed-parameter tractability of Distance-$r$ Dominating Set on any nowhere dense class was proved by Dawar and Kreutzer~\cite{DawarK09}; 
 their approach showcased applicability of {\em{uniform quasi-wideness}} in algorithm design.
 This line of research was continued by Drange et al.~\cite{DrangeDFKLPPRVS16} and by Eickmeyer et al.~\cite{eickmeyer2016neighborhood}, who gave a linear kernel for the problem on any class of bounded expansion
-and an almost linear kernel on any nowhere dense class, respectively
+and an almost linear kernel on any nowhere dense class, respectively.
 These works highlighted the concept of {\em{neighborhood complexity}} as a useful way of defining structural sparsity, 
-which was recently generalized and connected to concepts from stability theory by Pilipczuk et al.~\cite{pilipczuk2018number}.
+which was later generalized and connected to concepts from stability theory by Pilipczuk et al.~\cite{pilipczuk2018number}.
 Similarly as for model-checking first-order logic, for subgraph-closed classes the notion of nowhere denseness is the ultimate limit of parameterized tractability for Distance-$r$ Dominating Set,
-under plausible complexity assumptions.
+under plausible complexity assumptions~\cite{DrangeDFKLPPRVS16}.
 
 The study of duality between distance-$2r$ independence and distance-$r$ domination led Dvo\v{r}\'ak~\cite{Dvorak13}
 to the development of constant-factor approximation algorithms for both problems on any class of bounded expansion.
-The algorithm of Dvo\v{r}\'ak is remarkably simple and it relies on the usage of {\em{generalized coloring numbers}}, which influenced
+The algorithm of Dvo\v{r}\'ak is remarkably simple and it relies on {\em{generalized coloring numbers}}, which influenced a widespread usage of this approach in algorithmic aspects of sparsity.
+This applies in particular to the setting of {\em{distributed algorithms}}, because using generalized coloring numbers can be used to compute sparse {\em{neighborhood covers}}: 
+a covering of a graph using local clusters that enables localization of computation and, thus, facilitates distributed treatment.
+Using these ideas, Amiri et al.~\cite{AmiriMRS18} gave a distributed constant factor approximation algorithm for Distance-$r$ Dominating Set on any class of bounded expansion running in a logarithmic number of rounds.
+A distributed variant of the algorithm for Subgraph Isomorphism running in a logarithmic number of rounds was presented by Ne\v{s}et\v{r}il and Ossona de Mendez~\cite{NesetrilM16}.
 
 
 Recently, the tools of structural sparsity were successfully applied to give new algorithmic results in the settings of {\em{circuit complexity}}~\cite{PilipczukST18} 
