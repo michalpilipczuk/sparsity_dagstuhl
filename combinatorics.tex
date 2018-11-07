@@ -28,20 +28,15 @@ in relation to algorithm design, in particular to tractability of first-order mo
 This line of research culminated with a general first order model checking result of Grohe et al.~\cite{},
 which in turn provided a new alternative description of nowhere-dense graph classes.
 
-%Recent years have brought fascinating generalizations, describing
-%classes of sparse graphs more general than minor-closed classes. In 2011, Grohe and
-%Marx gave a similar description of the graphs in any graph class that is closed under topological containment. Dvorak further
-%strengthened their result in two different directions: he provided an optimal bound on the genera of the surfaces appearing
-%in the decomposition theorem of Grohe and Marx and he extended the results to graph classes that are closed under immersion.
-%
-%One of the most significant results in the graph theory is the graph minor project of Robertson and Seymour which is published in a sequence of 23 papers totalling over 750 pages. The main structural result of the series is a qualitative theorem describing the structure of graphs in a minor-closed class; the bounds attained by Robertson and Seymour on the constants in the structure theorem were enormous, in some cases involving tower functions and in other cases it was not even clear that they were computable. Kawarabayashi, Thomas and Wollan have simplified the original arguments of the structure theorem to get a 100 page proof with surprisingly good bounds (only doubly exponential) that were completely out of reach with earlier techniques. The progress made by Kawarabayashi et al. is of fundamental importance in relation to the design of efficient fixed parameter tractable algorithms based on graph minors.
-%
-%There have been various extensions and generalizations of the results stemming from the graph minor project. Graph immersions were considered by Dvo\v r\'ak and Wollan (2014) and Wollan (2015); graph subdivisions by Dvo\v r\'ak (2012), by Grohe and Marx (2015), and by Liu and Thomas (2017); and matroid minors by Geelen, Gerards, and Whittle (2013). There is also promising recent work on vertex-minors of graphs by Geelen, Oum, and Wollan and on butterfly-minors of directed graphs by Stefan Kreutzer and his research group. This timely workshop will bring together researchers working on these extensions of the graph minors project as well as the researchers who are simplifying the original arguments.
-%
-%Graph classes with restricted structure (such as minor closed classes) and classes based on various notions of width
-%play an important role in algorithm design.  Classical results from the theory of graph minors have recently been
-%extended to more general classes of graphs, e.g. those avoiding immersions and subdivisions, which provided new insights
-%on their structure including the existence of small-size separators.  The introduction of graph classes with bounded
-%expansion and nowhere-dense classes has led to a new robust way of understanding sparsity with many implications
-%in combinatorics and computer science.  An important direction seeks to transfer methods from the study of sparse
-%classes to non-sparse classes, such as graphs of bounded clique-width and their generalisations.
+While the purely quantitive sparsity measures (such as the edge density) are not linked to any global structural properties,
+the sparsity properties captured by the graph classes discussed above.
+For example, one of the main results of the graph minor project is that
+graphs avoiding a minor admit tree-like decompositions into pieces almost embeddable in surfaces of bounded genus.
+Grohe and Marx~\cite{} gave a similar description for graph classes closed under topological containment and
+Dvo\v r\'ak extended these results to graph classes closed under immersions.
+Motivated by problems from algorithm design,
+there is an intensive research on improving the dependence on parameters involved in these structural results.
+In particular,
+the recent simplified proof of the structure theorem in the graph minor setting~\cite{KawarabThomasWollan}
+led to surprisingly good bounds,
+which is of fundamental importance in relation to efficient fixed parameter tractable algorithms based on graph minors.
