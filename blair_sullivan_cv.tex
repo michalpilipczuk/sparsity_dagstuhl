@@ -1,0 +1,201 @@
+\documentclass[10pt]{article}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amsopn}
+\usepackage{latexsym}
+\usepackage[utf8]{inputenc}
+\usepackage{kpfonts}
+\usepackage[T1]{fontenc}
+\usepackage[polish,czech]{babel}
+\usepackage[section]{algorithm}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{url}
+\input epsf
+
+\newcommand{\ignore}[1]{}
+\newcommand{\CC}{{\bf{C:}}\quad}
+\newcommand{\JJ}{{\bf{J :}}\quad}
+
+\newcommand{\heading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\large \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm
+  \vspace{0.3cm}
+}
+
+\newcommand{\smallheading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\small \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm
+  \vspace{0.3cm}
+}
+
+\addtolength{\hoffset}{-28mm}
+\addtolength{\textwidth}{56mm}
+\addtolength{\voffset}{-20mm}
+\addtolength{\textheight}{28mm}
+
+\hyphenpenalty=100000
+
+%\pagenumbering{none}\newcounter{pcount}
+\newcounter{pcount}
+
+\newcommand{\paperplain}[2]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paper}[4]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\software}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\textsf{#3}}, #4 \\
+& {\footnotesize #5}
+\end{tabular}
+\vskip 0.2cm
+}
+
+\begin{document}
+
+\heading{Personal Information}
+
+\begin{small}
+\noindent
+\begin{tabular}{@{\hspace{0cm}}l @{\hspace{10mm}} p{13cm}}
+{\bf Name and surname} & Blair D. Sullivan\\[0.1cm]
+{\bf Address} & Department of Computer Science, Box 8206, North Carolina State University,\\
+& Raleigh, NC 27695\\[0.1cm]
+{\bf Phone number} & +1 919 513 0453\\[0.1cm]
+{\bf E-mail} & \verb+blair_sullivan@ncsu.edu+\\[0.1cm]
+{\bf Website} & \verb+http://www.csc.ncsu.edu/faculty/bdsullivan+\\[0.1cm]
+\end{tabular}
+\end{small}
+
+\heading{Education and academic career}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14.7cm}}
+since August 2016 & Associate Professor, Department of Computer Science, North Carolina State University \\[0.2cm]
+2013 --- 2016 & Assistant Professor, Department of Computer Science, North Carolina State University \\[0.2cm]
+2008 --- 2013 & Research \& Development Staff, Computer Science \& Mathematics Div., Oak Ridge National Laboratory \\[0.2cm]
+2007 -- 2008 & Visiting Researcher, R\'enyi Institute, Budapest, Hungary\\[0.2cm]
+2003 -- 2008 & Ph.D. in Mathematics, Department of Mathematics, Princeton University \\[0.2cm]
+1999 --- 2003 & B.Sc. in Computer Science, B.Sc. in Applied Mathematics, Georgia Institute of Technology.
+\end{tabular}
+\end{small}
+
+\heading{Selected scientific awards}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{1.8cm} @{\hspace{2mm}} p{15.7cm}}
+2013 & National Consortium for Data Science Faculty Fellow.\\[0.1cm]
+2003 -- 2007 & Department of Homeland Security Graduate Fellowship \& Dissertation Award.\\[0.1cm]
+2003 & Phi Kappa Phi Scholarship Cup, awarded to Georgia Tech senior with most outstanding academic record.\\[0.1cm]
+2003 & University System of Georgia Outstanding Scholar.\\[0.1cm]
+1999 -- 2003 & Georgia Tech Presidential Scholar and Jo Baker Scholar (2003).
+\end{tabular}
+\end{small}
+
+
+\heading{Selected grants}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14.7cm}}
+since October 2014 & Data-Driven Discovery Investigator Award, Gordon \& Betty Moore Foundation (\$1.5M USD).\\[0.2cm]
+2016 --- 2018 & Principal Investigator of grant ``Algorithms for Exploiting Approximate Network Structure'', funded by Army Research Office (\$540K USD).\\[0.2cm]
+2014 --- 2017 & Principal investigator of grant ``Parameterized Algorithms Respecting Structure in Noisy Graphs (PARSiNG)'', funded by DARPA (~\$250K USD).\\[0.2cm]
+2009 --- 2012 & Principal investigator of grant ``Scalable Graph Decomposition and Algorithms to Support the Analysis of Petascale Data'', funded by US Department of Energy (~\$1.2M USD).\\[0.2cm]
+\end{tabular}
+\end{small}
+
+
+\heading{Selected leadership/organization of scientific events}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14cm}}
+2016 -- present & Steering Committee, SIAM Workshop on Network Science.\\
+Jul 2016 & Co-Chair (with J. Gilbert) of SIAM Workshop on Network Science, Boston, Massachusetts.\\[0.1cm]
+Apr 2016 & Co-Organizer (w/ C. Greene, B. King, M. Turk) of Barnraising for Data-Intensive Discovery 2016 at Maine Developmental and Integrative Biology Laboratory (MDIBL), Bar Harbor, Maine.\\[0.1cm]
+2015 & Organizing Committee for SIAM Conference on Discrete Mathematics.\\[0.1cm]
+Apr 2014 & Co-Organizer (w/ E. Demaine, D. Marx) ICERM Research Cluster: Towards Efficient Algorithms Exploiting Graph Structure, Providence Rhode Island.\\[0.1cm]
+\end{tabular}
+\end{small}
+
+\pagebreak
+
+\heading{Selected invited talks}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{1.5cm} @{\hspace{2mm}} p{16cm}}
+Dec 2018 & Keynote Speaker at the 12th International Conference on Combinatorial Optimization and Applications (COCOA). Atlanta, Georgia.\\[0.1cm]
+Oct 2018 & Mathematics Department Colloquium at Georgia Institute of Technology. Atlanta, Georgia.\\[0.1cm]
+Jul 2018 & Invited talk at Workshop on Structural Sparsity, Logic, and Algorithms. Warwick, United Kingdom.\\[0.1cm]
+Jun 2016 & Invited talk in {\em Mathematics behind Big Data Analysis Minisymposium} at SIAM Conference on Discrete Mathematics. Atlanta, Georgia.\\[0.1cm]
+Jul 2015 & Invited talk at {\em Mathematics for Data Science Workshop} at ICERM. Providence, Rhode Island.\\[0.1cm]
+Feb 2015 & Program in Applied \& Computational Mathematics Colloquium at Princeton University. Princeton, New Jersey.\\[0.1cm]
+Jan 2015 & Invited talk at {\em Workshop on the Mathematics of Network Science}, AMS/MAA Joint Mathematics Meetings. San Antonio, TX.\\[0.1cm]
+\end{tabular}
+\end{small}
+
+\heading{Selected publications connected with the proposal's topic}
+
+\setcounter{pcount}{1}
+
+\begin{footnotesize}
+
+\paper{wide-stab}{C. T. Brown, D. Moritz, M. P. O'Brien, F. Reidl, T. E. Reiter, B. D. Sullivan.}{Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity.}{bioRxiv:10.1101/462788.}
+
+\paper{wide-stab}{J. Kun, M. P. O'Brien, B. D. Sullivan.}{Treedepth Bounds in Linear Colorings.}{Proceedings of 44th International Workshop on Graph-Theoretic Concepts in Computer Science (WG), 2018. ArXiv:1802.09665v3.}
+
+\paper{wide-stab}{K. Kloster, P. Kuinke, {M. P. O'Brien}, F. Reidl, F. Sanchez Villaamil, B. D. Sullivan, {A. van der Poel}}{A practical algorithm for Flow Decomposition and transcript assembly.}{Proceedings of Algorithm Engineering \& Experiments (ALENEX) 2018. ArXiv:1706.07851}
+
+\paper{wide-stab}{M. P. O'Brien, B. D. Sullivan}{An experimental evaluation of a bounded expansion algorithmic pipeline.}{ArXiv:1712.06690.}
+
+\paper{wide-stab}{Irene Muzi, {M. P. O'Brien}, F. Reidl, B. D. Sullivan}{Being even slightly shallow makes life hard.}{Proceedings of Mathematical Foundations of Computer Science (MFCS) 2017. ArXiv:1705.06796.}
+
+\paper{wide-stab}{E. Demaine, F. Reidl, P. Rossmanith, F. S. Villaamil, S. Sikdar, B. D. Sullivan}{Structural Sparsity of Complex Networks: Random Graph Models and Linear Algorithms}{ArXiv:1406.2587.}
+
+\end{footnotesize}
+
+\heading{Selected open source software connected with the proposal's topic}
+
+\setcounter{pcount}{1}
+
+\begin{footnotesize}
+
+\software{wide-stab}{C. T. Brown, D. Moritz, M. P. O'Brien, F. Reidl, B. D. Sullivan.}{SpaceGraphCats.}{\texttt{https://github.com/spacegraphcats/spacegraphcats} doi:10.5281/zenodo.1478025}{Python package for efficiently computing hierarchy of $r$-dominating graphs that summarize the neighborhood structure of a sparse graph at multiple resolutions.  Includes functionality for fast extraction of the neighborhood around a set of query vertices.\looseness-1}
+
+\software{wide-stab}{M. P. O'Brien, C. G. Hobbs, K. Jasnick, F. Reidl, B. Mork, N. G. Rodrigues, B. D. Sullivan}{CONCUSS: Combatting Network Complexity Using Structural Sparsity.}{\texttt{https://www.github.com/theoryinpractice/concuss} doi:10.5281/zenodo.55690}{Python software package providing proof-of-concept for an end-to-end pipeline for parameterized analytics in bounded expansion classes. Current modules use low-treedepth colorings to support subgraph isomorphism counting (motif counting).}
+
+\end{footnotesize}
+
+
+\heading{Service}
+\begin{small}
+\noindent \textbf{Mentees.} PhD students: Michael O'Brien (graduated in 2018), Andrew van der Poel (anticipated defense in 2019), Brian Lavallee. Postdocs: Kyle Kloster (2016--2018), Felix Reidl (2016--2017).
+\vskip 0.1cm
+\noindent \textbf{Outreach.}  AWM Research Symposium;  NCSU Women in CS; ORNL Women in Computing Advisory Board; SUMMER@ICERM; SAMSI E\&O Workshops; Data Science seminars at RTI, NIEHS, RTP180; RTP R-Ladies Women in Data Science Panel, etc.
+\vskip 0.1cm
+\noindent \textbf{Program Committees.} Complex Networks 2018; ALENEX 2017; SIAM NS 2017, 2015; SIAM DM 2016; SIAM CSC 2014.
+\end{small}
+
+
+
+\end{document}
