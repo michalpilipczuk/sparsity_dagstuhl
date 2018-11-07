@@ -11,6 +11,8 @@
 \usepackage[czech, english]{babel}
 \selectlanguage{english} % small trick to get $\v{l} for Dan ....
 
+\usepackage[utf8]{inputenc}
+
 \newcommand{\ourtitle}{Sparsity in Algorithms, Combinatorics and Logic}
 \newcommand{\email}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 \newcommand{\organizer}[7]{%
@@ -24,14 +26,15 @@
 \textbf{Homepage:} & \url{#7}
 \end{tabular}\par\vspace{4mm}}
 
-\newcommand{\invitee}[6]{%
+\newcommand{\invitee}[7]{%
 \noindent\begin{tabular}{p{3cm}l}
 \textbf{Name:} & #1 \\
 \textbf{Affiliation:} & #2 \\
-\textbf{Email:} & \email{#3} \\
-\ifthenelse{\equal{#4}{}}{}{\textbf{Homepage:} & \url{#4} \\}
-\textbf{Topics:} & #5
-\ifthenelse{\equal{#6}{}}{}{\\ \textbf{Tags:} & #6}
+\textbf{Country:} & #3 \\
+\textbf{Email:} & \email{#4} \\
+\ifthenelse{\equal{#5}{}}{}{\textbf{Homepage:} & \url{#5} \\}
+\textbf{Topics:} & #6
+\ifthenelse{\equal{#7}{}}{}{\\ \textbf{Tags:} & #7}
 \end{tabular}\par\vspace{2mm}}
 
 \renewcommand\thesection{\Alph{section}}
