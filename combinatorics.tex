@@ -1,1 +1,71 @@
-\paragraph*{Combinatorics.}
+\paragraph*{Eyes of a combinatorialist.}
+
+Graphs embeddable in the plane have always been understood as a prototype of a class of sparse graphs
+both from the structural and algorithmic points of view.
+However, the sparsity is not linked to purely quantitive parameters such as the number of edges:
+an edge-subdivision of every graph has the number of edges linear in the number of vertices
+but still possess complex properties of the original graph.
+A great amount of research has been concerning the investigation of questions on structural properties
+implying key combinatorial and algorithmic results linked to the sparsity of plane graphs.
+Many such questions has been answered by the graph minor project of Robertson and Seymour.
+They provided a structural description of graphs avoiding specific graphs as a minor;
+a particular example of such class of graphs is the class of graphs embeddable in the plane.
+Many concepts that are now better understood as a part of this project are of high importance in computer science:
+for example, the tree-width parameter, which measures how close the structure of a graph is to that of a tree,
+plays an essential role in computer science in relation to designing algorithms for sparse inputs.
+%The celebrated theorem of Courcelle which asserts that every MSO property is testable
+%for graphs of bounded tree-width is one of the most cited results in theoretical computer science.
+
+Recent years have brought substantial extensions of the results stemming from the graph minor project and
+a new fascinating view on sparse graphs through lenses of the concepts of graph classes with bounded expansion and
+nowhere-dense graph classes introduced by Ne\v est\v ril and Osssona de Mendez~\cite{}.
+
+%Among other things, they proved that for any such class, all the graphs in it
+%admit tree-like decompositions into pieces almost embeddable in surfaces of bounded genus.
+
+%Recent years have brought fascinating generalizations, describing
+%classes of sparse graphs more general than minor-closed classes. In 2011, Grohe and
+%Marx gave a similar description of the graphs in any graph class that is closed under topological containment. Dvorak further
+%strengthened their result in two different directions: he provided an optimal bound on the genera of the surfaces appearing
+%in the decomposition theorem of Grohe and Marx and he extended the results to graph classes that are closed under immersion.
+%
+%Another insight into the structure of graph classes was the concept of grads introduced by Nesetril and Ossona de Mendez.
+%They showed that all graph classes closed under taking subgraphs fall into one of the two categories: classes of sparse graphs,
+%which they call nowhere-dense graph classes, and classes of dense graphs that contain complete graphs of arbitrary order as
+%fixed-depth shallow-minors. The novel recent work of Grohe, Kreutzer and Siebertz led to an alternative description of
+%nowhere-dense graph classes in terms of the existence of small separations in the graphs contained in such classes. Their work
+%also has important algorithmic consequences on testing first order properties and
+%it led to new fixed-parameter tractability results.
+%
+%There are many different types of width decompositions of graphs with various applications
+%in graph theory and computer science.
+%From the structural point of view, an important phenomenon is duality:
+%the concept of a witness of the non-existence of a decomposition with small width.
+%Amini, Mazoit, Nisse and Thomasse proposed a unified way of treating dualities of width parameters.
+%A different approach, which generalises the notion of a tangle, has recently been proposed by Diestel and Oum.
+%Their approach, in addition to unifying the duality theorems for parameters such as branch-width,
+%path-width, rank-width and tree-width, also covers width parameters relevant to the recent canonical tree-decompositions
+%of graphs proposed by Carmesin, Diestel, Hamann and Hundertmark.
+%
+%Despite a good understanding of tree-decompositions and more generally minors of undirected graphs,
+%finding analogous concepts for directed graphs turned out to be much more challenging.
+%The first attempt at extending the theory to directed graphs was made by Johnson, Robertson, Seymour and Thomas in 2002.
+%Kawarabayashi and Kreutzer very recently announced a proof of the central conjecture in that paper, which says that large directed tree-width can force all directed grids as minors.
+%An alternative approach appeared in the work of Hunter, Kreutzer, Safari and Tazari.
+%However, Ganian, Hlineny, Kneis, Meister, Obdrzalek, Rossmanith and Sikdar showed that
+%there is no notion of directed tree-width that would have all the properties that one would expect
+%based on the analogy with the undirected case.
+%
+%
+%One of the most significant results in the graph theory is the graph minor project of Robertson and Seymour which is published in a sequence of 23 papers totalling over 750 pages. The main structural result of the series is a qualitative theorem describing the structure of graphs in a minor-closed class; the bounds attained by Robertson and Seymour on the constants in the structure theorem were enormous, in some cases involving tower functions and in other cases it was not even clear that they were computable. Kawarabayashi, Thomas and Wollan have simplified the original arguments of the structure theorem to get a 100 page proof with surprisingly good bounds (only doubly exponential) that were completely out of reach with earlier techniques. The progress made by Kawarabayashi et al. is of fundamental importance in relation to the design of efficient fixed parameter tractable algorithms based on graph minors.
+%
+%There have been various extensions and generalizations of the results stemming from the graph minor project. Graph immersions were considered by Dvo\v r\'ak and Wollan (2014) and Wollan (2015); graph subdivisions by Dvo\v r\'ak (2012), by Grohe and Marx (2015), and by Liu and Thomas (2017); and matroid minors by Geelen, Gerards, and Whittle (2013). There is also promising recent work on vertex-minors of graphs by Geelen, Oum, and Wollan and on butterfly-minors of directed graphs by Stefan Kreutzer and his research group. This timely workshop will bring together researchers working on these extensions of the graph minors project as well as the researchers who are simplifying the original arguments.
+%
+%
+%Graph classes with restricted structure (such as minor closed classes) and classes based on various notions of width
+%play an important role in algorithm design.  Classical results from the theory of graph minors have recently been
+%extended to more general classes of graphs, e.g. those avoiding immersions and subdivisions, which provided new insights
+%on their structure including the existence of small-size separators.  The introduction of graph classes with bounded
+%expansion and nowhere-dense classes has led to a new robust way of understanding sparsity with many implications
+%in combinatorics and computer science.  An important direction seeks to transfer methods from the study of sparse
+%classes to non-sparse classes, such as graphs of bounded clique-width and their generalisations.
