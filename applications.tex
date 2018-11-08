@@ -1,10 +1,40 @@
 \paragraph*{Applied eyes of an algorithm designer.}
 
-- Structural sparsity in real-world networks~\cite{demaine2018sparsity}
-- Application of r-dominating set algorithm in metagenomics (SpaceGraphCats)~\cite{brown2018metagenome}.
-- Subgraph isomorphism counting in bounded expansion (CONCUSS~\cite{obrien2017concuss}, Mandolin ).
-- Weak coloring number experiments~\cite{wojciech2018quasiwide}
-- Leads back to more classic problems~\cite{kun2018lincolor}
+Over the last twenty years, the field of network science
+has burgeoned, developing new methods for complex network data arising
+in diverse fields including social networks, bioinformatics, quantum computing,
+transportation, and healthcare. Surprisingly, few tools from structural graph theory have been assimilated into
+their arsenal. In part, this is due to the theoretical nature of
+much of the related literature on parameterized graph algorithms
+and a lack of cross-pollination of the research
+communities.
 
-- Bounded treewidth/planar graph applications:
-experiments on finding tw~\cite{bodlaender2006-tw, koster2001-tw} + PACE challenge (https://pacechallenge.org), solving with tw~\cite{ziobro2018hamcycle-tw, alber2005vc-tw}, solving ion planar~\cite{alber2001-planar}; application to quantum~\cite{dumitrescu2018tensors}, evaluation of parallel algorithms~\cite{sullivan2013paralleltd}. 
+There has been some work on making structure-based approaches more practical, mostly focused on
+bounded treewidth and planar graphs. When working with bounded treewidth, one significant
+challenge is finding low-width tree decompositions -- here, work by Bodlaender and Koster (e.g.~\cite{bodlaender2006-tw, koster2001-tw})
+set the stage for the PACE challenge (https://pacechallenge.org). More recently, there have also been
+experimental evaluations of treewidth-based algorithms for solving downstream optimization problems like
+Vertex Cover and Hamiltonian Cycle ~\cite{ziobro2018hamcycle-tw, alber2005vc-tw}. In an even more
+applied setting, recently treewidth solvers were shown to be competitive for finding contraction orderings
+for tensor networks used in quantum computing simulations~\cite{dumitrescu2018tensors}. There has also been some
+work on parallel algorithms for bounded treewidth graphs, including a distributed memory implementation of a
+Maximum Weighted Independent Set solver~\cite{sullivan2013paralleltd}.
+Planar graphs have also attracted more practical interest, in part due to their natural representation of problems with geographical
+constraints (e.g. ~\cite{alber2001-planar, schmidt2009-planarvision}).
+
+Since the introduction of structural sparsity and bounded expansion,
+there has been a resurgence in interest, in part because of work showing that
+this class includes many real-world networks (e.g. \cite{demaine2018sparsity}).
+Similar to algorithms for bounded treewidth, pipelines for structurally sparse graph classes
+require computation of a ``decomposition,'' such as a low-treedepth coloring. An end-to-end implementation
+of the algorithm for subgraph isomorphism counting~\cite{obrien2017concuss} revealed that the
+number of colors used in the current constant-factor approximation algorithms was causing a significant
+practical bottleneck. Subsequently, there has been work on comparing algorithms and heuristics
+for computing these parameters~\cite{wojciech2018quasiwide}, as well as more theoretical research
+on alternative colorings that trade off treedepth for smaller coloring numbers~\cite{kun2018lincolor}.
+These approaches are also starting to gain traction in interdisciplinary collaborations; a very recent
+preprint shows that algorithm engineering allows the constant-factor approximation algorithm
+for $r$-dominating set given by Dvorak to be applied to large assembly graphs in metagenomics~\cite{brown2018metagenome}.
+
+It remains a challenge to transform efficient algorithms into practical ones (by reducing hidden constants and other trickery),
+engineer scalable implementations, and forge collaborations with domain experts to ensure usability and relevance.
