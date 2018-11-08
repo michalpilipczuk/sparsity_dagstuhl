@@ -1,8 +1,9 @@
 \documentclass[10pt]{article}
 
 \usepackage{fullpage}
-%\usepackage[all=normal,bibliography=tight]{savetrees}
-
+\usepackage[all=normal,bibliography=tight]{savetrees}
+\usepackage[left=1in,right=1in,top=0.8in,bottom=0.8in]{geometry}
+            
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{hyperref} 
 \usepackage{todonotes}
@@ -12,6 +13,150 @@
 \selectlanguage{english} % small trick to get $\v{l} for Dan ....
 
 \usepackage[utf8]{inputenc}
+
+% ====================
+
+
+\newcommand{\ignore}[1]{}
+\newcommand{\CC}{{\bf{C:}}\quad}
+\newcommand{\JJ}{{\bf{J :}}\quad}
+
+\newcommand{\heading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\large \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm
+  \vspace{0.3cm}
+}
+
+\newcommand{\smallheading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\small \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm
+  \vspace{0.3cm}
+}
+
+%\addtolength{\hoffset}{-28mm}
+%\addtolength{\textwidth}{56mm}
+%\addtolength{\voffset}{-20mm}
+%\addtolength{\textheight}{28mm}
+
+%\hyphenpenalty=100000
+
+%\pagenumbering{none}
+
+\newcounter{pcount}
+
+\newcommand{\paperplain}[2]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paper}[4]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{15.3cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, {\em{#3}},\\ & #4.
+\end{tabular}
+\vskip 0.2cm
+}
+\newcommand{\paperbr}[4]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{15.3cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\ & {\em{#3}},\\ & #4.
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paperlncs}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\
+& #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+\newcommand{\paperk}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paperklncs}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #5\\
+& \hskip 0.96cm #6
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercm}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmlncs}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\
+& #5 \\[0.1cm]
+& {\bf{Note}}: #6
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmk}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #6\\
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmklncs}[7]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #6\\
+& \hskip 0.96cm #7\\
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+\newcommand{\software}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{15.3cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\textsf{#3}}, #4 \\
+& {\footnotesize #5}
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+% =========================
+
 
 \newcommand{\ourtitle}{Sparsity in Algorithms, Combinatorics and Logic}
 \newcommand{\email}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
@@ -135,7 +280,17 @@ sparsity-based methods, where theory and practice could meet.
 
 \input{invitees}
 
+\pagebreak
+
 \section{Organizers' CVs}
+
+\input{dan_kral_cv_embedded}
+\pagebreak
+\input{michal_pilipczuk_cv_embedded}
+\pagebreak
+\input{sebastian_siebertz_cv_embedded}
+\pagebreak
+\input{blair_sullivan_cv_embedded}
 
 \section{Proposed dates}
 
