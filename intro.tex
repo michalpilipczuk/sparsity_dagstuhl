@@ -1,5 +1,35 @@
 \paragraph*{Introduction.}
+It was realized already in the early days of computer science that structures (networks, databases, etc.) that are {\em{sparse}} appear ubiquitously in applications.
+The sparsity of input can be used in a variety of ways, e.g. to design efficient algorithms. This motivates a theoretical study of the abilities and limitations of sparsity-based methods.
+However, a priori it is not clear how to even define sparsity formally.
+Focusing on graphs with bounded maximum degree seems too restrictive, as real-life networks tend to have high-degree hubs while retaining a moderate overall number of edges,
+while only requiring a constant upper bound on the average degree is too relaxed, as it allows the existence of dense substructures.
+Another way is to concentrate on classes with topological constraints, e.g. planar graphs or, more generally, proper minor-closed classes, 
+or to generalize the example of bounded-degree networks to classes with bounded {\em{degeneracy}} (equivalently, bounded {\em{arboricity}}).
+While these ideas inspired multiple results, it can be argued that they did not lead to the development of a robust mathematical theory.
 
-We may like to say that sparsity is viewed differently by researchers with different backgrounds and
-we can then present the views. This will unify the text. It seemed to be as rather four independent parts and
-we have not been sending a unifying message in my view. \emph{Written by DK.}
+In late 2000s, Ne\v{s}et\v{r}il and Ossona de Mendez proposed a different approach: 
+to introduce new definitions of uniform, structural sparsity for classes of graphs that would generalize the currently considered settings,
+and to develop a toolbox of sparsity-based methods for such sparse classes.
+The central notions they introduced are classes of {\em{bounded expansion}} and {\em{nowhere dense}} classes.
+In a nutshell, a class of graphs $\Cc$ has bounded expansion if by contracting constant-radius connected subgraphs into single vertices
+in any graph from $\Cc$ one cannot obtain graphs with arbitrary high average degree; for nowhere denseness, we only insist that in this way one cannot obtain arbitrary large cliques.
+Thus, bounded expansion and nowhere denseness can be thought of uniform sparsity that persists under local modifications, modelled by constant-radius contractions.
+Every class of bounded expansion is nowhere dense, and every class that excludes a fixed topological minor --- in particular every proper minor-closed class and every class of bounded maximum degree ---
+has bounded expansion. Thus, these concepts are indeed broader than the previously considered settings, while sparse networks appearing in applications indeed tend to come from
+classes of bounded expansion~\cite{DemaineRRVSS14}.
+
+It quickly turned out that the proposed notions can be used to build a mathematical theory of sparse graph classes that offers a wealth of tools, leading to new techniques and powerful results.
+Indeed, the last 10 year has seen a great progress in the area, witnessed by multiple publications in top venues.
+It is particularly remarkable that the concepts of bounded expansion and nowhere denseness can be connected 
+to fundamental ideas from multiple other fields of computer science, often in a surprising way, and thus there are several complementary viewpoints on the subject. 
+On one hand, foundations of the area are grounded in {\em{structural graph theory}}, which aims at describing structure in graphs through various decompositions and auxiliary parameters.
+On the other hand, nowhere denseness seems to delimit the border of expressibility and algorithmic tractability of first-order logic, which provides a link to {\em{finite model theory}}.
+Finally, there is a fruitful transfer of ideas to and from the field {\em{algorithm design}}: sparsity-based methods can be used to design new, efficient algorithms, 
+and classic techniques of designing algorithms on sparse inputs inspire new combinatorial results on sparse graphs.
+It is the synergy of these three fields that makes the theory of sparse graphs so exciting.
+In the next paragraphs we explain how the recent progress can be viewed through the eyes of researchers working in these areas.
+
+The aim of the proposed seminar is to ``stir in the pot'' and invite researchers working with structurally sparse structures to share their experience, questions, and ideas.
+An important secondary goal is to facilitate discussion on practical applications of (so far) theoretical methods that were recently developed.
+
