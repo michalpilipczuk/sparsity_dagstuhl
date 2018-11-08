@@ -1,0 +1,275 @@
+\documentclass[polish,10pt]{article}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amsopn}
+\usepackage{latexsym}
+\usepackage[utf8]{inputenc}
+%\usepackage{kpfonts}
+\usepackage[T1]{fontenc}
+%\usepackage[polish,czech]{babel}
+\usepackage[section]{algorithm}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{url}
+%\input epsf
+\pagestyle{empty}
+
+\newcommand{\ignore}[1]{}
+\newcommand{\CC}{{\bf{C:}}\quad}
+\newcommand{\JJ}{{\bf{J :}}\quad}
+
+\newcommand{\heading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\large \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm
+  \vspace{0.3cm}
+}
+
+\newcommand{\smallheading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\small \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm
+  \vspace{0.3cm}
+}
+
+\addtolength{\hoffset}{-28mm}
+\addtolength{\textwidth}{56mm}
+\addtolength{\voffset}{-20mm}
+\addtolength{\textheight}{28mm}
+
+\hyphenpenalty=100000
+
+%\pagenumbering{none}\newcounter{pcount}
+\newcounter{pcount}
+
+\newcommand{\paperplain}[2]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paper}[4]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paperlncs}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\
+& #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+\newcommand{\paperk}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paperklncs}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #5\\
+& \hskip 0.96cm #6
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercm}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmlncs}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\
+& #5 \\[0.1cm]
+& {\bf{Note}}: #6
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmk}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #6\\
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmklncs}[7]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #6\\
+& \hskip 0.96cm #7\\
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+\begin{document}
+
+\heading{Personal Information}
+
+\begin{small}
+\noindent
+\begin{tabular}{@{\hspace{0cm}}l @{\hspace{10mm}} p{13cm}}
+{\bf Name and surname} & Sebastian Siebertz\\[0.1cm]
+{\bf Date and place of birth} & February 20$^{\textrm{th}}$, $1984$, Bergisch-Gladbach, Germany\\[0.1cm]
+{\bf Citizenship} & German\\[0.1cm]
+{\bf Address} & Institut f\"ur Informatik, Chair for Algorithm Engeneering, Humbold-Universit\"at zu Berlin, \\
+& Johann-von-Neumann-Haus, Rudower Chausse 25, 
+D-12489 Berlin-Adlershof, Germany\\[0.1cm]
+{\bf Phone number} & +49 30 3093 3010\\[0.1cm]
+{\bf E-mail} & \verb+siebertz@informatik.hu-berlin.de+\\[0.1cm]
+{\bf Website} & \verb+http://www.mimuw.edu.pl/~siebertz+\\[0.1cm]
+{\bf Research interests} & 
+Logic in computer science, structural graph theory, 
+parameterized complexity theory
+\end{tabular}
+\end{small}
+
+\heading{Education and academic career}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14.7cm}}
+since October 2018 & Postdoc at the Chair for Algorithm Engeneering 
+ at Humboldt-Universit\"at zu Berlin \\[0.2cm]
+2016 --- 2018 & Marie Sk\l odowska-Curie Fellow (supported by the National Science Centre of Poland and the European Union's Horizon 2020 research and 
+innovation  programme) at the Institute of Informatics of the University of
+    Warsaw. \\[0.2cm]
+2015 --- 2016 & Postdoc at the 
+chair for Logic and Semantic at Technical University Berlin (TU Berlin), Germany.\\[0.2cm]
+2011 --- 2015 & Doctoral research fellow (PhD position) at the 
+chair for Logic and Semantic at
+Technical University Berlin (TU Berlin), Germany, working under the supervision of Prof.\ Stephan Kreutzer.
+PhD thesis titled \emph{Nowhere Dense Classes of Graphs: Characterisations and Algorithmic Meta-Theorems} defended in September 2015.  Parental leave from February 2014 --- February 2015.\\[0.2cm]
+2004 --- 2011 & Studies in computer science at RWTH 
+Aachen University. Diploma in computer science defended
+in April 2011. 
+
+\end{tabular}
+\end{small}
+
+\heading{Leadership and participation in grants}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14.7cm}}
+2016 --- 2018 & Principal investigator in POLONEZ grant ``Algorithmic Structure Theory for Sparse Graphs'', funded by the National Science Center of Poland from the Horizon 2020 programme funds, Marie Sk\l{}odowska-Curie actions.\\[0.2cm]
+\end{tabular}
+\end{small}
+
+
+%\heading{Selected scientific awards}
+%\begin{small}
+%\noindent
+%\begin{tabular}{@{}p{1.8cm} @{\hspace{2mm}} p{15.7cm}}
+%2016 & ERCIM Cor Baayen Award 2016. Prize awarded annually to one promising young researcher in computer science and applied mathematics.\\[0.1cm]
+%2015, 2016 & START stipend granted by the Foundation for Polish Science (FNP), awarded with a~distinguishment for the highest ranked applications.\\[0.1cm]
+%2015 & Witold Lipski Prize for the best young researchers working in computer science in Poland.\\[0.1cm]
+%2015 & Stipend of the Ministry of Science and Higher Education of the Republic of Poland for outstanding young~researchers.\\[0.1cm]
+%2014 & Meltzer Prize for Young Researchers (Meltzerprisen for yngre forskere), awarded for the achievements in 2013.
+%\end{tabular}
+%\end{small}
+%
+%\pagebreak
+
+\heading{Selected talks}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{1.5cm} @{\hspace{2mm}} p{16cm}}
+Jul 2018 & Talk \emph{On the number of types in sparse graphs} at
+the ACM/IEEE Symposium on Logic in Computer Science (LICS 2018),
+Oxford, UK.  \\[0.1cm]
+Jan 2018 & Talk \emph{Polynomial Kernels and Wideness Properties of
+Nowhere Dense Graph Classes} at the ACM-SIAM Symposium on Discrete Algorithms (SODA 2017), Barcelona, Spain. \\[0.1cm]
+Sep 2017 & Invited talk \emph{First-Order Model-Checking} at the 
+parameterized complexity summer school, September 1--3, 2017, Vienna, Austria.\\[0.1cm]
+Jul 2014 & Invited talk \emph{Deciding first-order properties of
+ nowhere dense graphs} at the Midsummer Combinatorial Workshop XX, July 28 -- Aug 1, 2014, Charles University, Prague, Czech Republic.
+\end{tabular}
+\end{small}
+
+\pagebreak
+\heading{Organization of scientific events}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{1.6cm} @{\hspace{2mm}} p{15.9cm}}
+Jul 2017 & Co-organizer (with Michał Pilipczuk) of a satellite workshop of ICALP 2018 on algorithms and structure for sparse graphs. Warsaw, Poland.\\[0.1cm]
+Sep 2015 & Local co-organizer of \emph{Computer Science Logic} (CSL 2015), Berlin, Germany.
+\end{tabular}
+\end{small}
+
+\heading{Community service}
+\begin{small}
+\noindent {\bf{Co-supervised Bachelor students}}: Moritz Zielke, 
+Thesis titled \emph{Empirical Evaluation of Splitter-Game Based Algorithms for the Dominating Set Problem.}
+Alexander Court, Thesis titled \emph{Empirical Evaluation of Approximation Algorithms for Graph Colouring Numbers.}
+Frank Dehne, Thesis titled \emph{Empirical Evaluation of Approximation Algorithms for Directed Tree-Width.}
+\vskip 0.1cm
+\noindent {\bf{Program Committee member of}}: CSL 2018, Highlights of Logics Games and Automata 2018.
+\end{small}
+
+
+\heading{Selected publications connected with the proposal's topic}
+
+\setcounter{pcount}{1}
+
+\begin{footnotesize}
+
+\paper{mc}{Martin Grohe, Stephan Kreutzer, Sebastian Siebertz}
+{Deciding first-order properties of nowhere dense graphs}{Journal of the ACM, 2017}
+
+\paperlncs{wide-stab}{Jakub Gajarsk\'y, Stephan Kreutzer, Jaroslav Ne\v{s}et\v{r}il, Patrice Ossona de Mendez, Micha\l{} Pilipczuk, Sebastian Siebertz, Szymon Toru\'nczyk}
+{First-order interpretations of bounded expansion classes}{Proceedings of the 45$^{\text{th}}$ International Colloquium on Automata, Languages, and Programming, ICALP 2018}
+{Volume 107 of LIPIcs, Schlo\ss{} Dagstuhl --- Leibniz-Zentrum f\"ur Informatik, 2018}
+
+\paper{wide-stab}{Michał Pilipczuk, Sebastian Siebertz, Szymon Toruńczyk}
+{On the number of types in sparse graphs}{Proceedings of the 23$^{\textrm{rd}}$ Annual ACM/IEEE Symposium on Logic in Computer Science, LICS 2018}
+
+
+\paperlncs{nei-comp}{Kord Eickmeyer, Archontia Giannopoulou, Stephan Kreutzer, O-joung Kwon, Michał Pilipczuk, Roman Rabinovich, Sebastian Siebertz}
+{Neighborhood complexity and kernelization for nowhere dense classes of graphs}{Proceedings of the 44$^{\text{th}}$ International Colloquium on Automata, Languages, and Programming, ICALP 2017}
+{Volume 80 of LIPIcs, Schlo\ss{} Dagstuhl --- Leibniz-Zentrum f\"ur Informatik, 2017}
+
+\paperlncs{bounded-exp}{Pål Grønås Drange, Markus S. Dregi, Fedor V. Fomin, Stephan Kreutzer, Daniel Lokshtanov, Marcin Pilipczuk, Michał Pilipczuk, Felix Reidl, Fernando Sánchez Villaamil, Saket Saurabh, Sebastian Siebertz, Somnath Sikdar}
+{Kernelization and Sparseness: the case of Dominating Set}{Proceedings of the 33$^{\textrm{rd}}$ International Symposium on Theoretical Aspects of Computer Science, STACS 2016}
+{Volume 47 of LIPIcs, Schlo\ss{} Dagstuhl --- Leibniz-Zentrum f\"ur Informatik, 2016}
+\end{footnotesize}
+
+\vspace*{5cm}
+\end{document}
