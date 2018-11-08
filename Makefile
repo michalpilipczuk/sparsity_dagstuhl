@@ -14,7 +14,7 @@ all: $(TARGETS)
 	pdflatex $*_cv
 	pdflatex $*_cv
 
-proposal.pdf: $(BIBFILE) proposal.tex $(CVS)
+proposal.pdf: $(BIBFILE) $(TEXFILE) proposal.tex $(CVS)
 	pdflatex proposal
 	bibtex proposal
 	pdflatex proposal

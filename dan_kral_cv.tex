@@ -1,176 +1,317 @@
-\documentclass[11pt]{article}
-\sloppy
-\usepackage{a4wide}
-\usepackage{fancyhdr,lastpage}
-\usepackage{hyperref}
-\setlength{\headheight}{15pt}
-\pagestyle{fancy}
-\lhead{Daniel Kr\'al'}
-\chead{}
-\rhead{Page \thepage/\pageref{LastPage}}
-\fancyfoot{}
-\begin{document}
-\begin{center}
-{\Large\bf Curriculum vitae}\\
-\vskip 1ex
-{(Updated November 2018)}
-\end{center}
-\vskip 1ex
+\documentclass[polish,10pt]{article}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amsopn}
+\usepackage{latexsym}
+\usepackage[utf8]{inputenc}
+%\usepackage{kpfonts}
+\usepackage[T1]{fontenc}
+%\usepackage[polish,czech]{babel}
+\usepackage[section]{algorithm}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{url}
+%\input epsf
 
-\noindent
-\begin{tabular}{ll}
-Name: & Daniel Kr\'al' \\
-E-mail: & {\tt dkral@fi.muni.cz}\\ % & {\tt kral@ucw.cz} or {\tt dkral@fi.muni.cz}\\
-WWW:  & \url{https://www.fi.muni.cz/~dkral/}  \\
+\newcommand{\ignore}[1]{}
+\newcommand{\CC}{{\bf{C:}}\quad}
+\newcommand{\JJ}{{\bf{J :}}\quad}
+
+\newcommand{\heading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\large \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm 
+  \vspace{0.3cm}
+}
+
+\newcommand{\smallheading}[1]{
+  \vfill
+  \vspace{0.2cm}
+  \hrule height .2mm  \vspace{1mm}
+  \noindent {\small \textbf{#1}}\\ \vspace{-3mm} \hrule height .2mm 
+  \vspace{0.3cm}
+}
+
+\addtolength{\hoffset}{-28mm}
+\addtolength{\textwidth}{56mm}
+\addtolength{\voffset}{-20mm}
+\addtolength{\textheight}{28mm}
+
+\hyphenpenalty=100000
+
+%\pagenumbering{none}\newcounter{pcount}
+\newcounter{pcount}
+
+\newcommand{\paperplain}[2]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2
 \end{tabular}
+\vskip 0.2cm
+}
 
-\subsection*{Academic qualifications, summary of main achievements}
-\begin{itemize}
-\item Doctor of Science (DSc), Academy of Sciences of the Czech Republic, October 2012\\
-      Doctorate Degree (PhD) in Computer Science, Charles University, Prague, August 2004\\
-      Master Degree (Mgr) in Computer Science, Charles University, Prague, September 2001
-\item Philip Leverhulme Prize in Mathematics and Statistics 2014
-\item The European Prize in Combinatorics 2011
-\item ERC Consolidator grant LADIST 2015--2020 
-\item ERC Starting grant CCOSA 2010--2015 
-\item Over 100 papers in journals and over 20 at peer-reviewed computer science conferences\\
-Journal papers include those in Adv.~Math., Canad.~J.~Math., Combinatorica,
-Comput.~Complexity, GAFA, Israel J.~Math., J.~ACM, J.~Combin.~Theory Ser.~A and B, Proc.~LMS, SIAM J.~Discrete Math., Trans.~AMS\\
-Conference papers include those at FOCS, ICALP, SODA and STACS 
-\item Over 700 non-self-citations (WoS), H-index: 14 (WoS), 26 (Google Scholar) 
-\end{itemize}
+\newcommand{\paper}[4]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, {\em{#3}}, #4.
+\end{tabular}
+\vskip 0.2cm
+}
 
-\subsection*{Employment history}
-\begin{tabular}{ll}
-Oct 2018-now & Donald Ervin Knuth Professor, Masaryk University, Brno\\
-Sep 2018 & Professor, Faculty of Informatics, Masaryk University, Brno\\
+\newcommand{\paperlncs}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\
+& #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+\newcommand{\paperk}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\paperklncs}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #5\\
+& \hskip 0.96cm #6
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercm}[5]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmlncs}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\
+& #5 \\[0.1cm]
+& {\bf{Note}}: #6
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmk}[6]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #6\\
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+\newcommand{\papercmklncs}[7]{
+\noindent\begin{tabular}{@{}p{0.7cm} @{\hspace{2mm}} p{16.8cm}}
+[\arabic{pcount}\refstepcounter{pcount}\label{#1}] & #2, \\
+& {\em{#3}},\\
+& #4 \\[0.1cm]
+& {\bf{Conf.}}: #6\\
+& \hskip 0.96cm #7\\
+& {\bf{Note}}: #5
+\end{tabular}
+\vskip 0.2cm
+}
+
+
+\begin{document}
+
+\heading{Personal Information}
+
+\begin{small}
+\noindent
+\begin{tabular}{@{\hspace{0cm}}l @{\hspace{10mm}} p{13cm}}
+{\bf Name and surname} & Daniel Kr\'al'\\[0.1cm]
+{\bf Address} & Faculty of Informatics, Masaryk University, Botanick\'a 68A, 60200 Brno, Czech Republic\\
+{\bf E-mail} & \verb+dkral@fi.muni.cz+\\[0.1cm]
+{\bf Website} & \verb+https://www.fi.muni.cz/~dkral/+\\[0.1cm]
+{\bf Research interests} & Structural and extremal graph theory, analytic methods in combinatorics,\\
+                         & logic methods in graph and matroid theory and their algorithmic applications
+\end{tabular}
+\end{small}
+
+\heading{Education and academic career}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14.7cm}}
+Oct 2018-now & Donald Ervin Knuth Professor, Faculty of Informatics, Masaryk University, Brno\\
+Sep 2018 & Professor, Faculty of Informatics, Masaryk University, Brno\\[0.1cm]
 Oct 2012-now & Professor, University of Warwick (since Sep 2018 part-time)\\
 & Mathematics Institute and Department of Computer Science\\
-& Member of the DIMAP Centre\\
-Jul 2010-Sep 2012 & Associate professor, Charles University, Prague\\
-Feb 2011-Dec 2012 & Adjunct researcher, University of West Bohemia, Pilsen\\
-Aug 2006-Jun 2010 & Researcher, Charles University, Prague\\
-Oct 2005-Jul 2006 & Visiting assistant professor, Georgia Institute of Technology\\
-Aug 2005-Sep 2005 & Researcher, Charles University, Prague\\
-Oct 2004-Jul 2005 & Postdoctoral fellow, Technical University Berlin\\
+& Member of the DIMAP Centre\\[0.1cm]
+Jul 2010-Sep 2012 & Associate professor, Charles University, Prague\\[0.1cm]
+Feb 2011-Dec 2012 & Adjunct researcher, University of West Bohemia, Pilsen\\[0.1cm]
+Aug 2006-Jun 2010 & Researcher, Charles University, Prague\\[0.1cm]
+Oct 2005-Jul 2006 & Visiting assistant professor, Georgia Institute of Technology\\[0.1cm]
+Aug 2005-Sep 2005 & Researcher, Charles University, Prague\\[0.1cm]
+Oct 2004-Jul 2005 & Postdoctoral fellow, Technical University Berlin\\[0.1cm]
 Sept 2001-Aug 2004 & PhD student, Charles University, Prague 
 \end{tabular}
+\end{small}
 
-\subsection*{Research interests}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item Structural and extremal graph theory
-\item Analytic methods in combinatorics, in particular, combinatorial limits
-\item Logic methods in graph and matroid theory and their algorithmic applications
-\end{itemize}
+\heading{Selected scientific awards and major grants }
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{3cm} @{\hspace{2mm}} p{14.7cm}}
+2014 & Philip Leverhulme Prize in Mathematics and Statistics \\[0.1cm]
+2011 & European Prize in Combinatorics \\[0.1cm]
+2015--2020 & ERC Consolidator grant LADIST \\[0.1cm]
+2010--2015 & ERC Starting grant CCOSA
+\end{tabular}
+\end{small}
 
-\newpage
-\chead{Curriculum vitae}
-
-\subsection*{Professional service and commissions of trust}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item {\bf Editor-in-Chief:} SIAM J. Discrete Math. (since 2017, associate editor since 2012)
-\item {\bf Managing editor:} Advances in Combinatorics (since 2018)
-\item {\bf Associate editor:} Discrete Math. (since 2010) and Discrete Optim. (2010--2016)
-\item {\bf Editorial board member:} J.~Graph Theory (since 2008) and European J.~Combin. (since 2009)
-\item Member of the {\bf steering committee of SODA} (since 2016)
-\item {\bf Program committee chair:} CanaDAM'19
-\item {\bf Program committee member:} WG'06, MFCS'10, SODA'12, SOFSEM'12, IPEC'12, ICALP'13, EuroComb'13, SOFSEM'14, WG'14, SODA'15, EuroComb'15, FCT'15, MEMICS'15, CanaDAM'17, STACS'18 and DMD'18
-\item {\bf Organizing committee member:} SIAM DM'12, BCC'15, SIAM DM'16
-\item {\bf Organization of workshops:} CCOSA Fall School 2011, CCOSA Winter School 2013, ICMS workshop on Extremal Combinatorics 2014, LMS-CMI Research school on Regularity and Analytic Methods in Combinatorics 2015, Oberwolfach workshop on Graph Theory 2016 and 2019, Workshop on Algorithms, Logic and Structure 2016, 10 Year Anniversary DIMAP Workshop 2017, Workshop in Honour of Mike Paterson's 75th Birthday 2017, Workshop on Structural Sparsity, Logic and Algorithms 2018 
-\item Computer Science Panel of the Czech Grant Agency (2011--15, vice-chair 2012)
-\item Member of the 2016 D\'enes K\"onig Prize selection committee
-\item Promotion or appointment external reviewer for universities in Canada, Czech Republic, Germany, India, South Korea, UK and US 
-\item {\bf External PhD reviewer:}  UPC Barcelona, Bergen, TU Berlin, Montpellier, Nice, Oxford, Paris Diderot, QMUL, Rostock, University of West Bohemia 
-\end{itemize}
-
-\subsection*{Invited long term stays}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item Visiting professor, ENS Paris, France, 2016, 1 month
-\item Research program, Institut Mittag-Leffler, Stockholm, Sweden, 2014, 3 months
-\item Research program, Fields Institute, Toronto, Canada, 2011, 1 month
-\item Visiting professor, University of Pavol Jozef \v{S}af\'arik, Ko\v sice, Slovakia, 2011, 2 months
-\item Visiting professor, LIAFA, Paris, France, 2011, 3 months
-\end{itemize}
-
-\subsection*{Supervision of graduate students and postdoctoral researchers}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item {\bf Postdocs:} Jean-S\' ebastien Sereni (2006--08), Louis Esperet (2008--09), Demetres Christofides (2010--11), J\'an Maz\'ak (2011--12), Andrew Treglown (2011--12), Roman Glebov (2013), Anita Liebenau (2013--15), Ping Hu (2014--2017), Tam\'as Hubai (2015--2017), Andrzej Grzesik (2017--now), P\'eter P\'al Pach (2017--now), Jonathan Noel (2017--now)
-\item {\bf Former PhD students:} Pavel Nejedl\'y (Charles University, 2008), Jan Hladk\'y (Charles University, 2013), Jan Volec (Warwick and Universit\'e Paris Diderot, 2014, co-advised with Jean-S\'ebastien Sereni, {\em 2015 Faculty of Science Doctoral Thesis Award in Mathematics\/}), Luk\'a\v s Mach (Warwick, 2015), Tereza Klimo\v sov\'a (Warwick, 2015), Ta\'\i{}sa Lopes Martins (Warwick, 2018)
-\item {\bf Current PhD students:} Timothy Chan, Yanitsa Pehova
-\end{itemize}
+\heading{Professional service and commissions of trust}
+\begin{small}
+\noindent {\bf{Editor-in-Chief}}: SIAM J. Discrete Math. (since 2017, associate editor since 2012)
+\vskip 0.1cm
+\noindent {\bf{Managing editor}}: Advances in Combinatorics (since 2018)
+\vskip 0.1cm
+\noindent {\bf{Associate editor}}: Discrete Math. (since 2010) and Discrete Optim. (2010--2016)
+\vskip 0.1cm
+\noindent {\bf{Editorial board member}}: J.~Graph Theory (since 2008) and European J.~Combin. (since 2009)
+\vskip 0.1cm
+\noindent Member of the {\bf{steering committee of SODA}} (since 2016)
+\vskip 0.1cm
+\noindent {\bf{Program committee chair}}: CanaDAM'19
+\vskip 0.1cm
+\noindent {\bf{Program committee member}}: WG'06, MFCS'10, SODA'12, SOFSEM'12, IPEC'12, ICALP'13, EuroComb'13, SOFSEM'14, WG'14, SODA'15, EuroComb'15, FCT'15, MEMICS'15, CanaDAM'17, STACS'18 and DMD'18
+\vskip 0.1cm
+\noindent {\bf{Organizing committee member}}: SIAM DM'12, BCC'15, SIAM DM'16
+\vskip 0.1cm
+\noindent {\bf{Organization of workshops}}: CCOSA Fall School 2011, CCOSA Winter School 2013, ICMS workshop on Extremal Combinatorics 2014, LMS-CMI Research school on Regularity and Analytic Methods in Combinatorics 2015, Oberwolfach workshop on Graph Theory 2016, Workshop on Algorithms, Logic and Structure 2016, 10 Year Anniversary DIMAP Workshop 2017, Workshop in Honour of Mike Paterson's 75th Birthday 2017, Workshop on Structural Sparsity, Logic and Algorithms 2018, Oberwolfach workshop on Graph Theory 2019
+\vskip 0.1cm
+\noindent Member of the 2016 D\'enes K\"onig Prize selection committee
+\vskip 0.1cm
+\noindent Promotion or appointment reviewer for universities in Canada, Czech Republic, Germany, India, South Korea, UK and US
+\end{small}
 
 \newpage
 
-\subsection*{Invited plenary talks at international conferences (selected)}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item 10th International Colloquium on Graph theory and combinatorics 2018 (ICGT), Lyon, France
-\item SIAM Conference on Discrete Mathematics 2018, Denver, US
-\item 18th International Conference on Random Structures and Algorithms 2017 (RSA), Gniezno, Poland
-\item Structure in Graphs and Matroids (SIGMA), 2017, Waterloo, Canada
-\item Shanks Workshop: 29th Cumberland Conference on Combinatorics, Graph Theory and Computing, 2017, Nashville, US
-\item Algebraic, Topological and Complexity Aspects of Graph Covers (ATCAG), 2017, Durham, United Kingdom
-\item Bordeaux Graph Workshop (BGW), 2016, Bordeaux, France
-\item Discrete Mathematics Days, 2016, Barcelona, Spain
-\item International Workshop on Graph Decompositions, 2015, Marseille, France
-\item 2014 International Workshop on Structure in Graphs and Matroids, Princeton, US
-\item Bertinoro Workshop on Algorithms and Graphs 2013, Bertinoro, Italy
-\item 22nd Workshop '3in1' 2013, Kroczyce, Poland
-\item Utrecht Graphs Workshop 2013, Utrecht, Netherlands
-\item Graph Theory at Georgia Tech 2012 (GTAGT), Atlanta, US
-\item Kolloquium \"uber Kombinatorik 2011 (Kolkom), Magdeburg, Germany
-\item Joint Mathematical Conference CSASC 2011, Krems, Austria
-\item 6th European Conference on Combinatorics, Graph Theory and Applications 2011 (Eurocomb), Budapest, Hungary
-\item 18th workshop Cycles and Colourings 2009, Tatransk\'a \v Strba, Slovakia
-\item 35th Workshop on Graph-Theoretic Concepts in Computer Science 2009 (WG), Montpellier, France
-\item 43th International Czech and Slovak Conference Graphs 2008, Zadov, Czech Republic
-\end{itemize}
+\heading{Selected invited plenary talks}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{1.5cm} @{\hspace{2mm}} p{16cm}}
+2018 & 10th International Colloquium on Graph theory and combinatorics (ICGT), Lyon, France \\[0.1cm]
+2018 & SIAM Conference on Discrete Mathematics, Denver, US \\[0.1cm]
+2017 & 18th International Conference on Random Structures and Algorithms (RSA), Gniezno, Poland \\[0.1cm]
+2017 & Structure in Graphs and Matroids (SIGMA), Waterloo, Canada\\[0.1cm]
+2017 & Shanks Workshop: Cumberland Conference on Combinatorics, Graph Theory and Computing, Nashville, US\\[0.1cm]
+%2017 & Algebraic, Topological and Complexity Aspects of Graph Covers (ATCAG), Durham, United Kingdom\\[0.1cm]
+2016 & Bordeaux Graph Workshop (BGW), Bordeaux, France\\[0.1cm]
+2016 & Discrete Mathematics Days, Barcelona, Spain\\[0.1cm]
+%2015 & International Workshop on Graph Decompositions, Marseille, France\\[0.1cm]
+2014 & International Workshop on Structure in Graphs and Matroids, Princeton, US\\[0.1cm]
+2013 & Bertinoro Workshop on Algorithms and Graphs, Bertinoro, Italy\\[0.1cm]
+%2013 & 22nd Workshop '3in1', Kroczyce, Poland\\[0.1cm]
+%2013 & Utrecht Graphs Workshop, Utrecht, Netherlands\\[0.1cm]
+2012 & Graph Theory at Georgia Tech (GTAGT), Atlanta, US\\[0.1cm]
+2011 & Kolloquium \"uber Kombinatorik (Kolkom), Magdeburg, Germany\\[0.1cm]
+%2011 & Joint Mathematical Conference CSASC, Krems, Austria\\[0.1cm]
+2011 & 6th European Conference on Combinatorics, Graph Theory and Applications (Eurocomb), Budapest, Hungary\\[0.1cm]
+2009 & 18th workshop Cycles and Colourings, Tatransk\'a \v Strba, Slovakia\\[0.1cm]
+2009 & 35th Workshop on Graph-Theoretic Concepts in Computer Science (WG), Montpellier, France\\[0.1cm]
+%2008 & 43th International Czech and Slovak Conference Graphs, Zadov, Czech Republic
+\end{tabular}
+\end{small}
 
-\subsection*{Tutorial series}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item Open lectures for PhD students in computer science, 2018, Warsaw, Poland
-\item International Research School on Graph Limits, 2018, Lyon, France
-\item S\~ao Paulo School of Advanced Science on Algorithms, Combinatorics and Optimization, 2016, Brazil 
-\item 5th Polish Combinatorial Conference, 2014, Bedlewo, Poland
-\item IX Escuela de Verano en Matem\'aticas Discretas 2014, Valpara\'\i{}so, Chile
-\item LMS-EPSRC Durham Symposium ``Graph Theory and Interactions'' 2013, Durham
-\item Recent advances in the theory of directed graphs, 2013, Ol\'eron, France
-\item CCOSA Fall School 2011, Beroun, Czech Republic
-\end{itemize}
+\heading{Selected colloquium talks}
+\begin{small}
+\noindent
+\begin{tabular}{@{}p{1.5cm} @{\hspace{2mm}} p{16cm}}
+2018 & Department of Mathematics, Uppsala University, Sweden\\[0.1cm]
+2015 & Mathematics Colloquium, University of Birmingham, United Kingdom\\[0.1cm]
+2015 & School of Mathematics and ACO, Georgia Institute of Technology, Atlanta, US\\[0.1cm]
+2015 & Department of Mathematics, Iowa State University, Ames, US\\[0.1cm]
+2013 & Warwick Mathematics Institute, University of Warwick, United Kingdom\\[0.1cm]
+2012 & Department of Mathematical Sciences Colloquium, KAIST, Daejeon, Korea\\[0.1cm]
+2012 & Mathematics Colloquium, University of Illinois at Urbana-Champaign, US\\[0.1cm]
+2011 & Mathematisches Kolloquium, Universit\"at Rostock, Germany\\[0.1cm]
+2010 & Mathematics Colloquium, University of Ljubljana, Slovenia
+\end{tabular}
+\end{small}
 
-\newpage
 
-\subsection*{Colloquium talks (selected)}
-\begin{itemize}
-\setlength\itemsep{-1mm}
-\item Computer Science Colloquium, Masaryk University Brno, Czech Republic (2018)
-\item Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University, Prague, Czech Republic (2018)
-\item Department of Mathematics, Uppsala University, Sweden (2018)
-\item Computer Science Colloquium, Masaryk University Brno, Czech Republic (2016)
-\item Mathematics Colloquium, University of Birmingham, United Kingdom (2015)
-\item School of Mathematics and ACO, Georgia Institute of Technology, Atlanta, US (2015)
-\item Department of Mathematics, Iowa State University, Ames, US (2015)
-\item Prague Computer Science Seminar, Czech Technical Univ., Prague, Czech Rep. (2014)
-\item Warwick Mathematics Institute, University of Warwick, United Kingdom (2013)
-\item Department of Mathematical Sciences Colloquium, KAIST, Daejeon, Korea (2012)
-\item Mathematics Colloquium, University of Illinois at Urbana-Champaign, US (2012) 
-\item Mathematisches Kolloquium, Universit\"at Rostock, Germany (2011)
-\item Mathematics Colloquium, University of Ljubljana, Slovenia (2010)
-\item Computer Science Colloquium, Masaryk University Brno, Czech Republic (2009)
-\end{itemize}
+\heading{Supervision of graduate students and postdoctoral researchers}
+\begin{small}
+\noindent {\bf{Supervised postdocs}}: Jean-S\' ebastien Sereni (2006--08), Louis Esperet (2008--09), Demetres Christofides (2010--11), J\'an Maz\'ak (2011--12), Andrew Treglown (2011--12), Roman Glebov (2013), Anita Liebenau (2013--15), Ping Hu (2014--2017), Tam\'as Hubai (2015--2017), P\'eter P\'al Pach (2017--18), Jonathan Noel (2017--18), Andrzej Grzesik (2017--now)
+\vskip 0.1cm
+\noindent {\bf{Former PhD students}}: Pavel Nejedl\'y (Charles University, 2008), Jan Hladk\'y (Charles University, 2013), Jan Volec (Warwick and Universit\'e Paris Diderot, 2014, co-advised with J.~S.~Sereni, {\em 2015 Faculty of Science Doctoral Thesis Award in Mathematics\/}), Luk\'a\v s Mach (Warwick, 2015), Tereza Klimo\v sov\'a (Warwick, 2015), Ta\'\i{}sa Lopes Martins (Warwick, 2018)
+\vskip 0.1cm
+\noindent {\bf{Current PhD students}}: Timothy Chan, Yanitsa Pehova
+\end{small}
 
-\subsection*{Journal publications (selected)}
-\begin{itemize}
-\item J. W. Cooper, D. Kr\'al', T. Martins: {\it Finitely forcible graph limits are universal\/}, Advances in Mathematics {\bf 340} (2018), 819--854.
-\item Z. Dvo\v{r}\'ak, D. Kr\'al', R. Thomas: {\it Deciding first-order properties for sparse graphs\/}, Journal of ACM {\bf 60} (2013), article no.~36.
-\item L. Esperet, F. Kardo\v s, A. King, D. Kr\'al', S. Norine: {\it Exponentially many perfect matchings in cubic graphs\/}, Advances in Mathematics {\bf 227} (2011), 1646--1664.
-\item D. Kr\'al', O. Pikhurko: {\it Quasirandom permutations are characterized by 4-point densities\/}, Geometric and Functional Analysis {\bf 23} (2013), 570--579.
-\item D. Kr\'al', O. Serra, L. Vena: {\it A Removal Lemma for systems of linear equations over finite fields\/}, Israel Journal of Mathematics {\bf 187} (2012), 193--207.
-\end{itemize}
+\heading{Selected journal publications}
+
+\setcounter{pcount}{1}
+
+\begin{footnotesize}
+\paper{a}{J. W. Cooper, D. Kr\'al', T. Martins}{Finitely forcible graph limits are universal}{Advances in Mathematics {\bf 340} (2018), 819--854}
+\paper{b}{Z. Dvo\v{r}\'ak, D. Kr\'al', R. Thomas}{Deciding first-order properties for sparse graphs}{Journal of ACM {\bf 60} (2013), article no.~36}
+\paper{c}{L. Esperet, F. Kardo\v s, A. King, D. Kr\'al', S. Norine}{Exponentially many perfect matchings in cubic graphs}{ Advances in Mathematics {\bf 227} (2011), 1646--1664}
+\paper{d}{D. Kr\'al', O. Pikhurko}{Quasirandom permutations are characterized by 4-point densities}{Geometric and Functional Analysis {\bf 23} (2013), 570--579}
+\paper{e}{D. Kr\'al', O. Serra, L. Vena}{A Removal Lemma for systems of linear equations over finite fields}{Israel Journal of Mathematics {\bf 187} (2012), 193--207}
+\end{footnotesize}
+
+%
+%\subsection*{Invited long term stays}
+%\begin{itemize}
+%\setlength\itemsep{-1mm}
+%\item Visiting professor, ENS Paris, France, 2016, 1 month
+%\item Research program, Institut Mittag-Leffler, Stockholm, Sweden, 2014, 3 months
+%\item Research program, Fields Institute, Toronto, Canada, 2011, 1 month
+%\item Visiting professor, University of Pavol Jozef \v{S}af\'arik, Ko\v sice, Slovakia, 2011, 2 months
+%\item Visiting professor, LIAFA, Paris, France, 2011, 3 months
+%\end{itemize}
+%
+%
+
+%\subsection*{Invited plenary talks at international conferences (selected)}
+%\begin{itemize}
+%\setlength\itemsep{-1mm}
+%\end{itemize}
+%
+%\subsection*{Tutorial series}
+%\begin{itemize}
+%\setlength\itemsep{-1mm}
+%\item Open lectures for PhD students in computer science, 2018, Warsaw, Poland
+%\item International Research School on Graph Limits, 2018, Lyon, France
+%\item S\~ao Paulo School of Advanced Science on Algorithms, Combinatorics and Optimization, 2016, Brazil 
+%\item 5th Polish Combinatorial Conference, 2014, Bedlewo, Poland
+%\item IX Escuela de Verano en Matem\'aticas Discretas 2014, Valpara\'\i{}so, Chile
+%\item LMS-EPSRC Durham Symposium ``Graph Theory and Interactions'' 2013, Durham
+%\item Recent advances in the theory of directed graphs, 2013, Ol\'eron, France
+%\item CCOSA Fall School 2011, Beroun, Czech Republic
+%\end{itemize}
+%
+%\newpage
+%
+%
+%\subsection*{Journal publications (selected)}
+%\begin{itemize}
+%\end{itemize}
 
 \end{document}
