@@ -1,61 +1,61 @@
-First Name,Surname,Affiliation,Country,E-mail,Junior,Female,Industrial,Homepage,Topics,Round
-Isolde,Adler,University of Leeds,UK,I.M.Adler@leeds.ac.uk,,X,,https://engineering.leeds.ac.uk/staff/810/Dr_Isolde_Adler,"Algorithms, logic",1
-Saeed,Amiri,MPI Saarbrücken,Germany,samiri@mpi-inf.mpg.de,X,,,https://people.mpi-inf.mpg.de/~samiri/,Algorithms,1
-Marthe,Bonamy,LaBRI Bordeaux and CNRS,France,marthe.bonamy@u-bordeaux.fr,X,X,,http://www.labri.fr/perso/mbonamy/,"Combinatorics, algorithms",1
-Nicolas,Bousquet,University Grenoble Alpes and CNRS,France,nicolas.bousquet@grenoble-inp.fr,X,,,https://pagesperso.g-scop.grenoble-inp.fr/~bousquen/,"Combinatorics, algorithms",1
-Anuj,Dawar,University of Cambridge,UK,anuj.dawar@cl.cam.ac.uk,,,,https://www.cl.cam.ac.uk/~ad260/,"Combinatorics, algorithms, logic",1
-Reinhard,Diestel,University of Hamburg,Germany,ReinhardDiestel@math.uni-hamburg.de,,,,https://www.math.uni-hamburg.de/home/diestel/,"Combinatorics, algorithms",1
-Zdeněk,Dvořák,"Charles University, Prague",Czechia,ook@ucw.cz,,,,https://iuuk.mff.cuni.cz/~rakdver/,"Combinatorics, algorithms, logic",1
-Kord,Eickmeyer,"Technical University, Darmstadt",Germany,eickmeyer@mathematik.tu-darmstadt.de,,,,https://www2.mathematik.tu-darmstadt.de/~eickmeyer/,"Algorithms, logic",1
-Fedor,Fomin,University of Bergen,Norway,fomin@ii.uib.no ,,,,http://www.ii.uib.no/~fomin/,Algorithms,1
-Jakub,Gajarský,"Technical University, Berlin",Germany,jakub.gajarsky@tu-berlin.de,X,,,http://logic.las.tu-berlin.de/Members/Gajarsky/,"Algorithms, logic",1
-Robert,Ganian,"Technical University, Vienna",Austria,rganian@ac.tuwien.ac.at,X,,,https://www.ac.tuwien.ac.at/people/rganian/,"Algorithms, logic",1
-Archontia,Giannopoulou,"Technical University, Berlin",Germany,Archontia.Giannopoulou@gmail.com,X,X,,http://users.uoa.gr/~arcgian/index.html,"Combinatorics, algorithms",1
-Martin,Grohe,RWTH Aachen,Germany,grohe@informatik.rwth-aachen.de ,,,,,"Combinatorics, algorithms, logic",1
-Sariel,Har-Peled,University of Illinois in Urbana-Champaign,USA,sariel@uiuc.edu,,,,https://sarielhp.org/,Algorithms,1
-Petr,Hliněný,"Masaryk University, Brno",Czechia,hlineny@fi.muni.cz,,,,https://www.fi.muni.cz/~hlineny/,"Algorithms, logic",1
-Gwenaël,Joret,Free University of Brussels,Belgium,gjoret@ulb.ac.be,,,,http://di.ulb.ac.be/algo/gjoret/,Combinatorics,1
-Ken-ichi,Kawarabayashi,"National Institute of Informatics, Tokyo",Japan,kkeniti@nii.ac.jp,,,,,"Combinatorics, algorithms",1
-Tereza,Klimošová,"Charles University, Prague",Czechia,tereza@kam.mff.cuni.cz,X,X,,https://iuuk.mff.cuni.cz/~tereza/,Combinatorics,1
-Daniel,Král',"Masaryk University, Brno",Czechia,dkral@fi.muni.cz,,,,http://www.ucw.cz/~kral/,"Combinatorics, algorithms, logic",1
-Stephan,Kreutzer,"Technical University, Berlin",Germany,stephan.kreutzer@tu-berlin.de,,,,http://logic.las.tu-berlin.de/Members/Kreutzer/,"Algorithms, logic",1
-O-joung,Kwon,Incheon National University,South Korea,ojoungkwon@inu.ac.kr,X,,,http://ojkwon.com/,Algorithms,1
-Aurelie,Lagoutte,University Clermont-Auvergne,France,aurelie.lagoutte@uca.fr,X,X,,https://fc.isima.fr/~alagoutte/,Combinatorics,1
-Daniel,Lokshtanov,University of California in Santa Barbara,USA,daniello@ucsb.edu,,,,https://www.cs.ucsb.edu/people/faculty/lokshtanov,Algorithms,1
-Dániel,Marx,Hungarian Academy of Sciences (MTA SZTAKI),Hungary,dmarx@cs.bme.hu ,,,,http://www.cs.bme.hu/~dmarx/,"Combinatorics, algorithms",1
-Claire,Mathieu,CNRS,France,cmathieu@di.ens.fr,,,,https://www.di.ens.fr/ClaireMathieu.html,Algorithms,1
-Piotr,Micek,"Jagiellonian University, Cracow",Poland,piotr.micek@tcs.uj.edu.pl,,,,http://www.tcs.uj.edu.pl/micek,Combinatorics,1
-Amer,Mouawad,University of Bergen,Norway,amer.mouawad@gmail.com ,X,,,https://folk.uib.no/amo110/,Algorithms,1
-Irene,Muzi,University of Warsaw,Poland,irene.muzi@gmail.com,X,X,,https://sites.google.com/site/irenemuzigraph/home,"Combinatorics, algorithms",1
-Wojciech,Nadara,University of Warsaw,Poland,wojtek.nadara@gmail.com ,X,,,,"Algorithms, applications",1
-Jaroslav,Nešetřil,"Charles University, Prague",Czechia,nesetril@iuuk.mff.cuni.cz,,,,https://iuuk.mff.cuni.cz/~nesetril/en/,"Combinatorics, algorithms, logic",1
-Jan,Obdržálek,"Masaryk University, Brno",Czechia,obdrzalek@fi.muni.cz,,,,https://www.fi.muni.cz/~xobdrzal/,"Algorithms, logic",1
-Patrice,Ossona de Mendez,"CAMS Paris, CNRS, and Charles University, Prague",France/Czechia,patrice.ossona-de-mendez@ehess.fr ,,,,http://cams.ehess.fr/patrice-ossona-de-mendez/,"Combinatorics, algorithms, logic",1
-Sang-il,Oum,"KAIST, Daejeon",South Korea,sangil@kaist.edu,,,,https://mathsci.kaist.ac.kr/~sangil/,"Combinatorics, algorithms",1
-Fahad,Panolan,University of Bergen,Norway,Fahad.Panolan@uib.no,X,,,https://folk.uib.no/fpa082/,Algorithms,1
-Marcin,Pilipczuk,University of Warsaw,Poland,marcin.pilipczuk@mimuw.edu.pl,,,,https://www.mimuw.edu.pl/~malcin/,"Algorithms, applications",1
-Michał,Pilipczuk,University of Warsaw,Poland,michal.pilipczuk@mimuw.edu.pl,,,,https://www.mimuw.edu.pl/~mp248287/,"Algorithms, logic",1
-Kent,Quanrud,University of Illinois in Urbana-Champaign,USA,quanrud2@illinois.edu,X,,,http://quanrud2.web.engr.illinois.edu/,Algorithms,1
-Daniel,Quiroz,"University of Chile, Santiago de Chile",Chile,dquiroz@cmm.uchile.cl,X,,,http://www.cmm.uchile.cl/~dquiroz/,Combinatorics,1
-Roman,Rabinovich,"Technical University, Berlin",Germany,roman.rabinovich@tu-berlin.de,X,,,http://logic.las.tu-berlin.de/Members/Rabinovich/,"Algorithms, applications",1
-Jean-Florent,Raymond,"Technical University, Berlin",Germany,raymond@tu-berlin.de,X,,,http://www.user.tu-berlin.de/jraymond/,"Combinatorics, algorithms",1
-Felix,Reidl,Birbeck University of London,UK,f.reidl@dcs.bbk.ac.uk,X,,,https://tcs.rwth-aachen.de/~reidl/,"Combinatorics, algorithms",1
-Saket,Saurabh,"Institute of Mathematical Sciences, Chennai",India,saket@imsc.res.in,,,,http://www.ii.uib.no/~saket/,Algorithms,1
-Nicole,Schweikardt,"Humboldt University, Berlin",Germany,schweikn@informatik.hu-berlin.de,,X,,https://www2.informatik.hu-berlin.de/~schweikn/,"Algorithms, logic",1
-Luc,Segoufin,INRIA and ENS Ulm,France,luc.segoufin@inria.fr,,,,https://who.rocq.inria.fr/Luc.Segoufin/,"Algorithms, logic",1
-Sebastian,Siebertz,"Humboldt University, Berlin",Germany,siebertz@informatik.hu-berlin.de,X,,,https://www.informatik.hu-berlin.de/de/institut/mitarbeiter/1691486,"Algorithms, logic",1
-Konstantinos,Stavropoulos,University of Hamburg,Germany,konstantinos.stavropoulos@uni-hamburg.de,X,,,https://www.math.uni-hamburg.de/home/stavropoulos/,Combinatorics,1
-Blair,Sullivan,"North Carolina State University, Raleigh",USA,blair_sullivan@ncsu.edu,,X,,https://people.engr.ncsu.edu/vbsulliv/,"Algorithms, applications",1
-Dimitrios,Thilikos,LIRMM Montpellier and CNRS,France,sedthilk@thilikos.info,,,,https://www.lirmm.fr/~thilikosto/,"Combinatorics, algorithms",1
-Szymon,Toruńczyk,University of Warsaw,Poland,szymtor@mimuw.edu.pl,,,,https://www.mimuw.edu.pl/~szymtor/,"Algorithms, logic",1
-Torsten,Ueckerdt,Karlsruhe Institute of Technology,Germany,torsten.ueckerdt@kit.edu,X,,,https://i11www.iti.kit.edu/en/members/torsten_ueckerdt/index,Combinatorics,1
-Jan,van den Heuvel,London School of Economics and Political Science,UK,j.van-den-heuvel@lse.ac.uk,,,,http://www.maths.lse.ac.uk/personal/jan/,Combinatorics,1
-Alexandre,Vigny,University of Warsaw,Poland,alexandre.vigny@imj-prg.fr,X,,,https://webusers.imj-prg.fr/~alexandre.vigny/,"Algorithms, logic",1
-Kristina,Vušković,University of Leeds,UK,K.Vuskovic@leeds.ac.uk,,X,,https://engineering.leeds.ac.uk/staff/249/kristina_vuskovic,Combinatorics,1
-Bartosz,Walczak,"Jagiellonian University, Cracow",Poland,walczak@tcs.uj.edu.pl,,,,http://www.tcs.uj.edu.pl/walczak,Combinatorics,1
-Daniel,Weissauer,University of Hamburg,Germany,daniel.weissauer@uni-hamburg.de,X,,,,Combinatorics,1
-Paul,Wollan,University of Rome “La Sapienza”,Italy,wollan@di.uniroma1.it,,,,http://wwwusers.di.uniroma1.it/~wollan/,"Combinatorics, algorithms",1
-David,Wood,"Monash University, Melbourne",Australia,david.wood@monash.edu,,,,http://users.monash.edu.au/~davidwo/,"Combinatorics, algorithms",1
-Marcin,Wrochna,University of Oxford,UK,m.wrochna@mimuw.edu.pl ,X,,,https://www.mimuw.edu.pl/~mw290715/,"Combinatorics, algorithms",1
-Meirav,Zehavi,Ben-Gurion University,Israel,zehavimeirav@gmail.com,X,X,,https://sites.google.com/site/zehavimeirav/,Algorithms,1
-Xuding,Zhu,"National Sun Yat-sen University, Kaohsiung",Taiwan,zhu@math.nsysu.edu.tw,,,,http://www.math.nsysu.edu.tw/~zhu/,Combinatorics,1
+Surname;First Name;Affiliation;Country;E-mail;Junior;Female;Industrial;Homepage;Topics;Round
+Adler;Isolde;University of Leeds;GB;I.M.Adler@leeds.ac.uk;;X;;https://engineering.leeds.ac.uk/staff/810/Dr_Isolde_Adler;Algorithms, logic;1
+Amiri;Saeed;MPI Saarbrücken;DE;samiri@mpi-inf.mpg.de;X;;;https://people.mpi-inf.mpg.de/~samiri/;Algorithms;1
+Bonamy;Marthe;LaBRI Bordeaux and CNRS;FR;marthe.bonamy@u-bordeaux.fr;X;X;;http://www.labri.fr/perso/mbonamy/;Combinatorics, algorithms;1
+Bousquet;Nicolas;University Grenoble Alpes and CNRS;FR;nicolas.bousquet@grenoble-inp.fr;X;;;https://pagesperso.g-scop.grenoble-inp.fr/~bousquen/;Combinatorics, algorithms;1
+Dawar;Anuj;University of Cambridge;GB;anuj.dawar@cl.cam.ac.uk;;;;https://www.cl.cam.ac.uk/~ad260/;Combinatorics, algorithms, logic;1
+Diestel;Reinhard;University of Hamburg;DE;ReinhardDiestel@math.uni-hamburg.de;;;;https://www.math.uni-hamburg.de/home/diestel/;Combinatorics, algorithms;1
+Dvořák;Zdeněk;Charles University, Prague;CZ;ook@ucw.cz;;;;https://iuuk.mff.cuni.cz/~rakdver/;Combinatorics, algorithms, logic;1
+Eickmeyer;Kord;Technical University, Darmstadt;DE;eickmeyer@mathematik.tu-darmstadt.de;;;;https://www2.mathematik.tu-darmstadt.de/~eickmeyer/;Algorithms, logic;1
+Fomin;Fedor;University of Bergen;NO;fomin@ii.uib.no ;;;;http://www.ii.uib.no/~fomin/;Algorithms;1
+Gajarský;Jakub;Technical University, Berlin;DE;jakub.gajarsky@tu-berlin.de;X;;;http://logic.las.tu-berlin.de/Members/Gajarsky/;Algorithms, logic;1
+Ganian;Robert;Technical University, Vienna;AT;rganian@ac.tuwien.ac.at;X;;;https://www.ac.tuwien.ac.at/people/rganian/;Algorithms, logic;1
+Giannopoulou;Archontia;Technical University, Berlin;DE;Archontia.Giannopoulou@gmail.com;X;X;;http://users.uoa.gr/~arcgian/index.html;Combinatorics, algorithms;1
+Grohe;Martin;RWTH Aachen;DE;grohe@informatik.rwth-aachen.de ;;;;;Combinatorics, algorithms, logic;1
+Har-Peled;Sariel;University of Illinois in Urbana-Champaign;US;sariel@uiuc.edu;;;;https://sarielhp.org/;Algorithms;1
+Hliněný;Petr;Masaryk University, Brno;CZ;hlineny@fi.muni.cz;;;;https://www.fi.muni.cz/~hlineny/;Algorithms, logic;1
+Joret;Gwenaël;Free University of Brussels;BE;gjoret@ulb.ac.be;;;;http://di.ulb.ac.be/algo/gjoret/;Combinatorics;1
+Kawarabayashi;Ken-ichi;National Institute of Informatics, Tokyo;JP;kkeniti@nii.ac.jp;;;;;Combinatorics, algorithms;1
+Klimošová;Tereza;Charles University, Prague;CZ;tereza@kam.mff.cuni.cz;X;X;;https://iuuk.mff.cuni.cz/~tereza/;Combinatorics;1
+Král';Daniel;Masaryk University, Brno;CZ;dkral@fi.muni.cz;;;;http://www.ucw.cz/~kral/;Combinatorics, algorithms, logic;1
+Kreutzer;Stephan;Technical University, Berlin;DE;stephan.kreutzer@tu-berlin.de;;;;http://logic.las.tu-berlin.de/Members/Kreutzer/;Algorithms, logic;1
+Kwon;O-joung;Incheon National University;KR;ojoungkwon@inu.ac.kr;X;;;http://ojkwon.com/;Algorithms;1
+Lagoutte;Aurelie;University Clermont-Auvergne;FR;aurelie.lagoutte@uca.fr;X;X;;https://fc.isima.fr/~alagoutte/;Combinatorics;1
+Lokshtanov;Daniel;University of California in Santa Barbara;US;daniello@ucsb.edu;;;;https://www.cs.ucsb.edu/people/faculty/lokshtanov;Algorithms;1
+Marx;Dániel;Hungarian Academy of Sciences (MTA SZTAKI);HU;dmarx@cs.bme.hu ;;;;http://www.cs.bme.hu/~dmarx/;Combinatorics, algorithms;1
+Mathieu;Claire;CNRS;FR;cmathieu@di.ens.fr;;;;https://www.di.ens.fr/ClaireMathieu.html;Algorithms;1
+Micek;Piotr;Jagiellonian University, Cracow;PL;piotr.micek@tcs.uj.edu.pl;;;;http://www.tcs.uj.edu.pl/micek;Combinatorics;1
+Mouawad;Amer;University of Bergen;NO;amer.mouawad@gmail.com ;X;;;https://folk.uib.no/amo110/;Algorithms;1
+Muzi;Irene;University of Warsaw;PL;irene.muzi@gmail.com;X;X;;https://sites.google.com/site/irenemuzigraph/home;Combinatorics, algorithms;1
+Nadara;Wojciech;University of Warsaw;PL;wojtek.nadara@gmail.com ;X;;;;Algorithms, applications;1
+Nešetřil;Jaroslav;Charles University, Prague;CZ;nesetril@iuuk.mff.cuni.cz;;;;https://iuuk.mff.cuni.cz/~nesetril/en/;Combinatorics, algorithms, logic;1
+Obdržálek;Jan;Masaryk University, Brno;CZ;obdrzalek@fi.muni.cz;;;;https://www.fi.muni.cz/~xobdrzal/;Algorithms, logic;1
+Ossona de Mendez;Patrice;CAMS Paris, CNRS, and Charles University, Prague;FR;patrice.ossona-de-mendez@ehess.fr ;;;;http://cams.ehess.fr/patrice-ossona-de-mendez/;Combinatorics, algorithms, logic;1
+Oum;Sang-il;KAIST, Daejeon;KR;sangil@kaist.edu;;;;https://mathsci.kaist.ac.kr/~sangil/;Combinatorics, algorithms;1
+Panolan;Fahad;University of Bergen;NO;Fahad.Panolan@uib.no;X;;;https://folk.uib.no/fpa082/;Algorithms;1
+Pilipczuk;Marcin;University of Warsaw;PL;marcin.pilipczuk@mimuw.edu.pl;;;;https://www.mimuw.edu.pl/~malcin/;Algorithms, applications;1
+Pilipczuk;Michał;University of Warsaw;PL;michal.pilipczuk@mimuw.edu.pl;;;;https://www.mimuw.edu.pl/~mp248287/;Algorithms, logic;1
+Quanrud;Kent;University of Illinois in Urbana-Champaign;US;quanrud2@illinois.edu;X;;;http://quanrud2.web.engr.illinois.edu/;Algorithms;1
+Quiroz;Daniel;University of Chile, Santiago de Chile;CL;dquiroz@cmm.uchile.cl;X;;;http://www.cmm.uchile.cl/~dquiroz/;Combinatorics;1
+Rabinovich;Roman;Technical University, Berlin;DE;roman.rabinovich@tu-berlin.de;X;;;http://logic.las.tu-berlin.de/Members/Rabinovich/;Algorithms, applications;1
+Raymond;Jean-Florent;Technical University, Berlin;DE;raymond@tu-berlin.de;X;;;http://www.user.tu-berlin.de/jraymond/;Combinatorics, algorithms;1
+Reidl;Felix;Birbeck University of London;GB;f.reidl@dcs.bbk.ac.uk;X;;;https://tcs.rwth-aachen.de/~reidl/;Combinatorics, algorithms;1
+Saurabh;Saket;Institute of Mathematical Sciences, Chennai;IN;saket@imsc.res.in;;;;http://www.ii.uib.no/~saket/;Algorithms;1
+Schweikardt;Nicole;Humboldt University, Berlin;DE;schweikn@informatik.hu-berlin.de;;X;;https://www2.informatik.hu-berlin.de/~schweikn/;Algorithms, logic;1
+Segoufin;Luc;INRIA and ENS Ulm;FR;luc.segoufin@inria.fr;;;;https://who.rocq.inria.fr/Luc.Segoufin/;Algorithms, logic;1
+Siebertz;Sebastian;Humboldt University, Berlin;DE;siebertz@informatik.hu-berlin.de;X;;;https://www.informatik.hu-berlin.de/de/institut/mitarbeiter/1691486;Algorithms, logic;1
+Stavropoulos;Konstantinos;University of Hamburg;DE;konstantinos.stavropoulos@uni-hamburg.de;X;;;https://www.math.uni-hamburg.de/home/stavropoulos/;Combinatorics;1
+Sullivan;Blair;North Carolina State University, Raleigh;US;blair_sullivan@ncsu.edu;;X;;https://people.engr.ncsu.edu/vbsulliv/;Algorithms, applications;1
+Thilikos;Dimitrios;LIRMM Montpellier and CNRS;FR;sedthilk@thilikos.info;;;;https://www.lirmm.fr/~thilikosto/;Combinatorics, algorithms;1
+Toruńczyk;Szymon;University of Warsaw;PL;szymtor@mimuw.edu.pl;;;;https://www.mimuw.edu.pl/~szymtor/;Algorithms, logic;1
+Ueckerdt;Torsten;Karlsruhe Institute of Technology;DE;torsten.ueckerdt@kit.edu;X;;;https://i11www.iti.kit.edu/en/members/torsten_ueckerdt/index;Combinatorics;1
+van den Heuvel;Jan;London School of Economics and Political Science;GB;j.van-den-heuvel@lse.ac.uk;;;;http://www.maths.lse.ac.uk/personal/jan/;Combinatorics;1
+Vigny;Alexandre;University of Warsaw;PL;alexandre.vigny@imj-prg.fr;X;;;https://webusers.imj-prg.fr/~alexandre.vigny/;Algorithms, logic;1
+Vušković;Kristina;University of Leeds;GB;K.Vuskovic@leeds.ac.uk;;X;;https://engineering.leeds.ac.uk/staff/249/kristina_vuskovic;Combinatorics;1
+Walczak;Bartosz;Jagiellonian University, Cracow;PL;walczak@tcs.uj.edu.pl;;;;http://www.tcs.uj.edu.pl/walczak;Combinatorics;1
+Weissauer;Daniel;University of Hamburg;DE;daniel.weissauer@uni-hamburg.de;X;;;;Combinatorics;1
+Wollan;Paul;University of Rome “La Sapienza”;IT;wollan@di.uniroma1.it;;;;http://wwwusers.di.uniroma1.it/~wollan/;Combinatorics, algorithms;1
+Wood;David;Monash University, Melbourne;AU;david.wood@monash.edu;;;;http://users.monash.edu.au/~davidwo/;Combinatorics, algorithms;1
+Wrochna;Marcin;University of Oxford;GB;m.wrochna@mimuw.edu.pl ;X;;;https://www.mimuw.edu.pl/~mw290715/;Combinatorics, algorithms;1
+Zehavi;Meirav;Ben-Gurion University;IL;zehavimeirav@gmail.com;X;X;;https://sites.google.com/site/zehavimeirav/;Algorithms;1
+Zhu;Xuding;National Sun Yat-sen University, Kaohsiung;TW;zhu@math.nsysu.edu.tw;;;;http://www.math.nsysu.edu.tw/~zhu/;Combinatorics;1
