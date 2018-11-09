@@ -14,11 +14,12 @@ uniform quasi-wideness turned out to be very useful, especially
 for the task of algorithmically testing first-order properties of
 graphs. The problem of determining whether a formula $\varphi$
 of some logic $\mathcal{L}$ is true on a given structure is known 
-as the model-checking problem for $\mathcal{L}$. By proving
+as the \emph{model-checking problem} for $\mathcal{L}$. By proving
 tractability of the model-checking problem for a logic $\mathcal{L}$
 one establishes tractability for a large number of problems, namely
-for all problems that can be formulated in $\mathcal{L}$, such 
-tractability results are often called \emph{algorithmic meta 
+for all problems that can be formulated in $\mathcal{L}$. For this
+reason,  such  tractability results are often called 
+\emph{algorithmic meta 
 theorems}. It was shown by Dvo\v{r}\'ak et al.~\cite{DvorakKT13}
 that every first-order property of graphs can be decided in linear time
 on every fixed class of graphs of bounded expansion, and by Grohe et 
@@ -30,9 +31,10 @@ model-checking problem is fixed-parameter tractable, parameterized
 by the length of the input formula, on every bounded bounded
 expansion or nowhere dense class of graphs. On the other hand, 
 nowhere dense classes that are closed under taking subgraphs 
-form the border of tractability for the model-checking problem. 
+form the border of tractability for the first-order 
+model-checking problem. 
 It was shown by Dvo\v{r}\'ak et al.~\cite{DvorakKT13} and
-Kreutzer~\cite{kre11} that model-checking on classes that
+Kreutzer~\cite{kre11} that first-order model-checking on classes that
 are closed under taking subgraphs and that are not nowhere
 dense is as hard as on general graphs, in particular, it is 
 assumed to be not fixed-parameter tractable. 
