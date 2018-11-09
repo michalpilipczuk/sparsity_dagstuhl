@@ -2,8 +2,8 @@
 It was realized already in the early days of computer science that structures (networks, databases, etc.) that are {\em{sparse}} appear ubiquitously in applications.
 The sparsity of input can be used in a variety of ways, e.g. to design efficient algorithms. This motivates a theoretical study of the abilities and limitations of sparsity-based methods.
 However, a priori it is not clear how to even define sparsity formally.
-Focusing on graphs with bounded maximum degree seems too restrictive, as real-life networks tend to have high-degree hubs while retaining a moderate overall number of edges,
-while only requiring a constant upper bound on the average degree is too relaxed, as it allows the existence of dense substructures.
+Focusing on graphs with bounded maximum degree seems too restrictive, as real-life networks tend to have high-degree hubs while retaining a moderate overall number of edges.
+On the other hand, only requiring a constant upper bound on the average degree is too relaxed, as it allows the existence of dense substructures.
 Another way is to concentrate on classes with topological constraints, e.g. planar graphs or, more generally, proper minor-closed classes,
 or to generalize the example of bounded-degree networks to classes with bounded {\em{degeneracy}} (equivalently, bounded {\em{arboricity}}).
 While these ideas inspired multiple results, it can be argued that they did not lead to the development of a robust mathematical theory.
@@ -14,7 +14,7 @@ and to develop a toolbox of sparsity-based methods for such sparse classes.
 The central notions they introduced are classes of {\em{bounded expansion}} and {\em{nowhere dense}} classes.
 In a nutshell, a class of graphs $\Cc$ has bounded expansion if by contracting constant-radius connected subgraphs into single vertices
 in any graph from $\Cc$ one cannot obtain graphs with arbitrary high average degree; for nowhere denseness, we only insist that in this way one cannot obtain arbitrary large cliques.
-Thus, bounded expansion and nowhere denseness can be thought of uniform sparsity that persists under local modifications, modelled by constant-radius contractions.
+Thus, bounded expansion and nowhere denseness can be thought of uniform sparsity that persists under local modifications, modeled by constant-radius contractions.
 Every class of bounded expansion is nowhere dense, and every class that excludes a fixed topological minor --- in particular every proper minor-closed class and every class of bounded maximum degree ---
 has bounded expansion. Thus, these concepts are indeed broader than the previously considered settings, while sparse networks appearing in applications indeed tend to come from
 classes of bounded expansion~\cite{DemaineRRVSS14}.

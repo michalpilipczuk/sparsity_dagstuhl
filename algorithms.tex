@@ -1,15 +1,15 @@
 \paragraph*{Theoretical eyes of an algorithm designer.} 
 Combinatorial methods developed in the study of classes of sparse graphs turned out to be very useful in the design of algorithms, in particular within the framework of {\em{parameterized complexity}}.
-In this area, the goal is develop algorithms whose running time is measured not only in terms of the total input size, but also secondary measures called {\em{parameters}} that govern the actual 
-difficulty of the instance. The usual goal here is to show that a problem is {\em{fixed-parameter tractable}}, that is, 
+In this area, the idea is to develop algorithms whose running time is measured not only in terms of the total input size, but also secondary measures called {\em{parameters}} that govern the actual 
+difficulty of the instance. The usual goal is to show that a problem is {\em{fixed-parameter tractable}}, that is, 
 design an algorithm that runs in time $f(k)\cdot n^c$, where $n$ is the input size, $k$ is the parameter (or a vector of parameters), 
 $f$ is a computable function, and $c$ is a universal constant, independent of $k$.
 This philosophy very well matches the toolbox of sparsity, which provides a wealth of parameters measuring structural sparsity of graphs, such as generalized coloring numbers or
-low-treedepth colorings. Historically, the study of parameterized algorithms on sparse structures focused on the cases of graphs of bounded degree and on proper minor-closed classes, with a particular focuse on
+low-treedepth colorings. Historically, the study of parameterized algorithms on sparse structures focused on the cases of graphs of bounded degree and on proper minor-closed classes, with a particular focus on
 planar graphs and graphs of bounded tree-width.
 
 Note that all the abovementioned settings can be subsumed by the concepts of bounded expansion and nowhere denseness.
-It turns out that for certain general type of problems, these structural sparsity notions form a very suitable context of study, yielding conceptually simpler, yet more general reasonings than 
+It turns out that for a certain general type of problems, these structural sparsity notions form a very suitable context of study, yielding conceptually simpler, yet more general reasonings than 
 in the case of proper minor-closed classes. Not surprisingly, the techniques are best-suited to problems with a local character:
 one looks for a solution (say, subset of vertices) that admits a property that can be checked by inspecting a constant-depth neighborhood of every vertex.
 Example problems of this kind are the following: Subgraph Isomorphism (given graphs $H$ and $G$, check whether $H$ is a subgraph of $G$), Distance-$r$ Independent Set (given a graph $G$, find as many as possible
@@ -34,7 +34,7 @@ validates the fundamental nature of the notion of nowhere denseness: it is the n
 The study of duality between distance-$2r$ independence and distance-$r$ domination led Dvo\v{r}\'ak~\cite{Dvorak13}
 to the development of constant-factor approximation algorithms for both problems on any class of bounded expansion.
 The algorithm of Dvo\v{r}\'ak is remarkably simple and it relies on {\em{generalized coloring numbers}}, which influenced a widespread usage of this approach in algorithmic aspects of sparsity.
-This applies in particular to the setting of {\em{distributed algorithms}}, because using generalized coloring numbers can be used to compute sparse {\em{neighborhood covers}}: 
+This applies in particular to the setting of {\em{distributed algorithms}}, because generalized coloring numbers can be used to compute sparse {\em{neighborhood covers}}: 
 a covering of a graph using local clusters that enables localization of computation and, thus, facilitates distributed treatment.
 Using these ideas, Amiri et al.~\cite{AmiriMRS18} gave a distributed constant factor approximation algorithm for Distance-$r$ Dominating Set on any class of bounded expansion running in a logarithmic number of rounds.
 A distributed variant of the algorithm for Subgraph Isomorphism running in a logarithmic number of rounds was presented by Ne\v{s}et\v{r}il and Ossona de Mendez~\cite{NesetrilM16}.
