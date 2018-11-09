@@ -1,6 +1,5 @@
 \paragraph*{Eyes of a combinatorialist.}
-
-Graphs embeddable in the plane have always been understood as a prototype of a class of sparse graphs
+Graphs embeddable in the plane have always been understood as a prototype of a class of sparse graphs,
 both from the structural and algorithmic points of view.
 However, the sparsity is not linked to purely quantitative parameters such as the number of edges:
 an edge-subdivision of every graph has the number of edges linear in the number of vertices
@@ -15,9 +14,31 @@ Many concepts that are now better understood as a part of this project are of hi
 for example, the tree-width parameter, which measures how close the structure of a graph is to that of a tree,
 plays an essential role in computer science in relation to designing algorithms for sparse inputs.
 
+The concepts of classes of bounded expansion and nowhere dense classes properly generalize classes characterized by excluding a fixed minor.
+Therefore, a theory built around these ideas yields more general results and puts the previous work in a perspective.
+It turns out that the notions of bounded expansion and nowhere denseness have multiple different, equivalent characterizations.
+For instance, the characterization via {\em{generalized coloring numbers}} originates in the concept of bounded degeneracy and provides an algorithmically useful decomposition of the graph with small ``local''
+separators~\cite{Zhu09}
+{\em{Low tree-depth decompositions}} break the graph into a constant number of well-behaved pieces that can be treated somewhat independently~\cite{NesetrilM08a}.
+{\em{Uniform quasi-wideness}} formalizes the intuition that in a sparse graphs there should be many vertices that are far from each other~\cite{nevsetvril2010first}.
+{\em{Neighborhood complexity}} aims at measuring the sparsity in terms of the complexity of set systems defined by constant-radius balls in a graph~\cite{ReidlVS19}.
+{\em{Splitter game}} is a game characterization of nowhere denseness that provides a shallow hierarchical decomposition of a graph into local clusters~\cite{grohe2017deciding}.
+
+Each of the above concepts is a tool: it offers a different combinatorial handle that can be used to view the problem from a different viewpoint.
+The combination of all these ideas provides a powerful toolbox of sparsity-based methods, using which one can often provide conceptually simpler, yet more general reasonings than 
+with the help of techniques originating in the graph minor project. 
+An ingredient that is inherently lacking is the existence of a global tree-like decompositions,
+which exist in the cases of graphs with excluded minor~\cite{GM16}, topological minor~\cite{GroheM15}, or immersion~\cite{Wollan15}.
+
+So far, the combinatorial research within the theory of sparse graph classes focused on identifying and understanding different characterizations of sparsity, as well as connections between them.
+In particular, quantitative relations between different parameters involved are an important topic of study.
+As we discuss in the next sections, much of this research was driven by algorithmic and model-theoretical applications.
+
+
+\begin{comment}
 Recent years have brought substantial extensions of the results stemming from the graph minor project and
 a new fascinating view on sparse graphs through lenses of the concepts of graph classes with bounded expansion and
-nowhere dense graph classes introduced by Ne\v set\v ril and Ossona de Mendez~\cite{NesetrilM08,NesetrilM08a,NesetrilM08b}.
+nowhere dense graph classes introduced by Ne\v set\v ril and Ossona de Mendez.
 Many natural classes of sparse graphs, in particular minor-closed classes and classes of graphs with bounded degrees,
 have bounded expansion and so fall into the framework developed by Ne\v est\v ril and Ossona de Mendez.
 This framework turned out to be very robust since the graph classes captured by these notions
@@ -40,3 +61,4 @@ In particular,
 the recent simplified proof of the structure theorem in the graph minor setting
 led to surprisingly good bounds~\cite{KawarabayashiTW18},
 which is of fundamental importance in relation to efficient fixed parameter tractable algorithms based on graph minors.
+\end{comment}
